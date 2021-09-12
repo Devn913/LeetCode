@@ -1,3 +1,4 @@
+[Discussion Post (created on 12/8/2021 at 13:12)](https://leetcode.com/problems/second-largest-digit-in-a-string/discuss/1458934/JAVA-Time%3A-1-ms-(99.84)-Space%3A-37.8-MB-(74.92))  
 <h2>1796. Second Largest Digit in a String</h2><h3>Easy</h3><hr><div><p>Given an alphanumeric string <code>s</code>, return <em>the <strong>second largest</strong> numerical digit that appears in </em><code>s</code><em>, or </em><code>-1</code><em> if it does not exist</em>.</p>
 
 <p>An <strong>alphanumeric</strong><strong> </strong>string is a string consisting of lowercase English letters and digits.</p>
