@@ -4,8 +4,7 @@ class Solution {
         int counter = 0;
         while(counter<nums.length){
             if(counter>index[counter]){
-                int i = counter;
-                for(;i!=index[counter];i--){
+                for(int i = counter;i!=index[counter];i--){
                     result[i] = result[i-1];
                 }
                 
