@@ -10,7 +10,7 @@ class Solution {
                 map.put(arr[i],1);
             }
         }
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>();
         for (Map.Entry ele : map.entrySet()) {
             if((int)ele.getValue()>1){
                 list.add((int)ele.getKey());
