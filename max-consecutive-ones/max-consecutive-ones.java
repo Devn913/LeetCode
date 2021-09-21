@@ -10,6 +10,6 @@ class Solution {
                 intermediate = 0;
             }
         }
-        return Math.max(result,intermediate) ;
+        return Math.max(result,intermediate);
     }
 }
