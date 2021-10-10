@@ -1,3 +1,4 @@
+[Discussion Post (created on 10/9/2021 at 11:14)](https://leetcode.com/problems/bitwise-and-of-numbers-range/discuss/1513649/C%2B%2B-O(1)-TIME-and-SPACE)  
 <h2>201. Bitwise AND of Numbers Range</h2><h3>Medium</h3><hr><div><p>Given two integers <code>left</code> and <code>right</code> that represent the range <code>[left, right]</code>, return <em>the bitwise AND of all numbers in this range, inclusive</em>.</p>
 
 <p>&nbsp;</p>
