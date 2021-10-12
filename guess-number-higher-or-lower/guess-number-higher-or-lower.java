@@ -15,7 +15,7 @@ public class Solution extends GuessGame {
             int res = guess(mid);
             if(res==0) 
                 return mid;
-            else if(res==1) 
+            else if(res>0) 
                 low = mid +1;
             else 
                 high = mid -1;
