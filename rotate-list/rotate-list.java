@@ -10,19 +10,10 @@
  */
 class Solution {
     
-    public ListNode rotateList(ListNode head, int k){
-        if(k==0) return head;
-        ListNode temp = head;
-        while(temp.next.next != null) temp = temp.next;
-        ListNode temp2 = temp.next;
-        temp.next = null;
-        temp2.next = head;
-        head = temp2;
-        return rotateRight(head,--k);
-    }
+
     
     public ListNode rotateRight(ListNode head, int k) {
-        if(head ==null || head.next == null) return head;
+        if(head ==null || head.next == null|| k==0) return head;
         ListNode temp = head;
         int size = 0;
         while(temp!=null){
@@ -30,6 +21,19 @@ class Solution {
             size ++;
         }
         k = k%size;
-        return rotateList(head,k);
+        if(k==0) return head;
+        temp = head;
+        int counter = 0;
+        while(counter<size-k-1){
+            temp = temp.next;
+            counter++;
+        }
+        ListNode temp2  =temp.next;
+        temp.next = null;
+        temp = temp2;
+        while(temp.next != null) temp = temp.next;
+        temp.next = head;
+        head = temp2;
+        return head;
     }
 }
