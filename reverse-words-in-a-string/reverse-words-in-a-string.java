@@ -7,10 +7,13 @@ class Solution {
             int j = i;
             if(i<0) break;
             while(i>=0 && s.charAt(i)!=' ') i--;
-            if(res.length() == 0)
+            if(res.length() == 0){
                 res.append(s.substring(i+1,j+1));
-            else
-                res.append(" " + s.substring(i+1,j+1));
+            }
+            else{
+                res.append(" ");
+                res.append(s.substring(i+1,j+1));
+            }
         }
         
         return res.toString();
