@@ -1,3 +1,4 @@
+[Discussion Post (created on 20/9/2021 at 12:46)](https://leetcode.com/problems/reverse-words-in-a-string/discuss/1531091/JAVA-O(n)-time-O(1)-space)  
 <h2>151. Reverse Words in a String</h2><h3>Medium</h3><hr><div><p>Given an input string <code>s</code>, reverse the order of the <strong>words</strong>.</p>
 
 <p>A <strong>word</strong> is defined as a sequence of non-space characters. The <strong>words</strong> in <code>s</code> will be separated by at least one space.</p>
