@@ -1,3 +1,4 @@
+[Discussion Post (created on 5/11/2021 at 14:1)](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/discuss/1612604/Java-100-FAST-95-Space-Recursion)  
 <h2>114. Flatten Binary Tree to Linked List</h2><h3>Medium</h3><hr><div><p>Given the <code>root</code> of a binary tree, flatten the tree into a "linked list":</p>
 
 <ul>
