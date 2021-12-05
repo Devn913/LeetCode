@@ -1,3 +1,4 @@
+[Discussion Post (created on 5/11/2021 at 17:0)](https://leetcode.com/problems/sort-list/discuss/1612876/Java-Merge-Sort)  
 <h2>148. Sort List</h2><h3>Medium</h3><hr><div><p>Given the <code>head</code> of a linked list, return <em>the list after sorting it in <strong>ascending order</strong></em>.</p>
 
 <p>&nbsp;</p>
