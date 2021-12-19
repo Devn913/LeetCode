@@ -1,3 +1,4 @@
+[Discussion Post (created on 19/11/2021 at 22:20)](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/discuss/1636350/JAVA)  
 <h2>2108. Find First Palindromic String in the Array</h2><h3>Easy</h3><hr><div><p>Given an array of strings <code>words</code>, return <em>the first <strong>palindromic</strong> string in the array</em>. If there is no such string, return <em>an <strong>empty string</strong> </em><code>""</code>.</p>
 
 <p>A string is <strong>palindromic</strong> if it reads the same forward and backward.</p>
