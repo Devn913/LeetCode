@@ -1,3 +1,4 @@
+[Discussion Post (created on 26/11/2021 at 15:3)](https://leetcode.com/problems/a-number-after-a-double-reversal/discuss/1648216/JAVA-100-FAST)  
 <h2>2119. A Number After a Double Reversal</h2><h3>Easy</h3><hr><div><p><strong>Reversing</strong> an integer means to reverse all its digits.</p>
 
 <ul>
