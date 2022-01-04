@@ -23,8 +23,7 @@ class FindElements {
     }
     public void recovers(TreeNode root,int val){
         if(root == null) return;
-        if(root.left!=null) set.add(2*val+1);
-        if(root.right!=null) set.add(2 * val +2);
+        set.add(val);
         recovers(root.left,2*val+1);
         recovers(root.right,2*val+2);
     }
