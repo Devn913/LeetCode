@@ -15,30 +15,29 @@
  */
 class BSTIterator {
     
-     Queue<Integer> q = new LinkedList<>();
-
+    Stack<TreeNode> s = new Stack<>();
     public BSTIterator(TreeNode root) {
-        Stack<TreeNode> s = new Stack<>();
         TreeNode curr = root;
-        while(curr!=null ||  s.size() > 0){
-            while(curr!=null){
-                s.push(curr);
-                curr = curr.left;
-            }
-            curr = s.pop();
-            q.add(curr.val);
-            curr = curr.right;
+        while(curr!=null){
+            s.push(curr);
+            curr = curr.left;
         }
     }
     
     public int next() {
-        int val = q.peek();
-        q.remove();
+        TreeNode curr = s.pop();
+        int val = curr.val;
+        curr = curr.right;
+        while(curr!=null){
+            s.push(curr);
+            curr =curr.left;
+        }
         return val;
+        
     }
     
     public boolean hasNext() {
-        return q.size()!=0;
+        return s.size()!=0;
     }
 }
 
