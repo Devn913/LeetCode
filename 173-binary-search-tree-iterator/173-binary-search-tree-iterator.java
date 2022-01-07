@@ -15,8 +15,9 @@
  */
 class BSTIterator {
     
-    Stack<TreeNode> s = new Stack<>();
+    Stack<TreeNode> s;
     public BSTIterator(TreeNode root) {
+        s = new Stack<>();
         TreeNode curr = root;
         while(curr!=null){
             s.push(curr);
