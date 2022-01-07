@@ -19,7 +19,7 @@ class Solution {
         if(root==null) return 0;
         int ans = 0;
         if(root.val>=rootVal && root.val>=maxVal) ans++;
-        maxVal = Math.max(root.val,maxVal);
+        if(maxVal<root.val) maxVal = root.val;
         return ans + helper(root.left,maxVal,rootVal) + helper(root.right,maxVal,rootVal);
     }
     
