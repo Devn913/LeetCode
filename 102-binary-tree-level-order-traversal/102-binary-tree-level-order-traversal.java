@@ -20,14 +20,14 @@ class Solution {
         Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
         while(!q.isEmpty()){
-            List<Integer> temp = new ArrayList<>();
+            List<Integer> temp = new ArrayList<>(q.size());
             for(int i = q.size();i>0;i--){
                 TreeNode front = q.remove();
                 temp.add(front.val);
                 if(front.left!=null) q.add(front.left);
                 if(front.right!=null) q.add(front.right);
             }
-            list.add(temp);
+            list.add(temp); 
         }
         return list;
     }
