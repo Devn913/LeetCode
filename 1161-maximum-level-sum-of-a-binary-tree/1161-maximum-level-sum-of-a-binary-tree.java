@@ -24,8 +24,7 @@ class Solution {
         while(!q.isEmpty()){
             int tempSum = 0;
             for(int i = q.size();i>0;i--){
-                TreeNode front = q.peek();
-                q.remove();
+                TreeNode front = q.remove();
                 tempSum+=front.val;
                 if(front.left!=null){
                     q.add(front.left);
