@@ -131,8 +131,7 @@ class Tree
         while(!q.isEmpty()){
             list.add(q.peek().data);
             for(int i = q.size();i>0;i--){
-                Node front = q.peek();
-                q.remove();
+                Node front = q.remove();
                 if(front.left!=null) q.add(front.left);
                 if(front.right!=null) q.add(front.right);
           }
