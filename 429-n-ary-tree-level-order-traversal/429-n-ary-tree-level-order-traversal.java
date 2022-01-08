@@ -27,7 +27,7 @@ class Solution {
         Queue<Node> q = new LinkedList<>();
         q.add(root);
         while(!q.isEmpty()){
-            List<Integer> temp = new ArrayList<>();
+            List<Integer> temp = new ArrayList<>(q.size());
             for(int i = q.size();i>0;i--){
                 Node front = q.peek();
                 q.remove();
