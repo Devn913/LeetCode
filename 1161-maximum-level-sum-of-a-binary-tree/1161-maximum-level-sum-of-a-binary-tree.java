@@ -18,24 +18,19 @@ class Solution {
         if(root == null) return 0;
         Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
-        int child =  1;
         int maxSum = root.val;
         int maxLevel = 1;
         int tempLevel = 0;
         while(!q.isEmpty()){
             int tempSum = 0;
-            int till = child;
-            child = 0;
-            for(int i = 0;i<till;i++){
+            for(int i = q.size();i>0;i--){
                 TreeNode front = q.peek();
                 q.remove();
                 tempSum+=front.val;
                 if(front.left!=null){
                     q.add(front.left);
-                    child++;
                 }if(front.right!=null){
                     q.add(front.right);
-                    child++;
                 }
             }
             tempLevel++;
