@@ -18,14 +18,14 @@ class Solution {
         List<Integer> list = new ArrayList<>();
         if(root == null) return list;
         Queue<TreeNode> q = new LinkedList<>();
-        q.add(root);
+        q.offer(root);
         while(!q.isEmpty()){
             int max  = Integer.MIN_VALUE;
             for(int i = q.size();i>0;i--){
-                TreeNode front = q.remove();
+                TreeNode front = q.poll();
                 max = Math.max(max,front.val);
-                if(front.left!=null) q.add(front.left);
-                if(front.right!=null) q.add(front.right);
+                if(front.left!=null) q.offer(front.left);
+                if(front.right!=null) q.offer(front.right);
             }
             list.add(max);
         }
