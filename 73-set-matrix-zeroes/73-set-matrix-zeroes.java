@@ -11,14 +11,11 @@ class Solution {
                 }
             }
         }
-        for(int row: rows){
-            for(int i =0;i<matrix[0].length;i++){
-                matrix[row][i] = 0;
-            }
-        }
-        for(int col: cols){
-            for(int i = 0;i<matrix.length;i++){
-                matrix[i][col] = 0;
+        for(int i =0;i<matrix.length;i++){
+            for(int j = 0;j<matrix[0].length;j++){
+                if(rows.contains(i) || cols.contains(j)){
+                    matrix[i][j] = 0;
+                }
             }
         }
         
