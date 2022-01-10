@@ -22,7 +22,7 @@ class Solution {
                     map.put(s, map.getOrDefault(s,0) + 1);
                 }
             }else{
-                String rev  = reverse(s);
+                String rev  = Character.toString(s.charAt(1)) +  Character.toString(s.charAt(0));
                 if(map.containsKey(rev) && map.getOrDefault(rev,0) > 0){
                     res+=4;
                     map.put(rev,map.getOrDefault(rev,1) -1);
