@@ -1,6 +1,6 @@
 class Solution {
     public int longestPalindrome(String[] words) {
-        HashMap<String,Integer> map = new HashMap<>();
+        HashMap<String,Integer> map = new HashMap<>(words.length);
         int res = 0;
         int unpaired = 0;
         for(String s: words){
