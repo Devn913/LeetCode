@@ -1,12 +1,4 @@
 class Solution {
-    
-    public String reverse(String s){
-        StringBuilder sb = new StringBuilder();
-        sb.append(s);
-        return sb.reverse().toString();
-    }
-    
-    
     public int longestPalindrome(String[] words) {
         HashMap<String,Integer> map = new HashMap<>();
         int res = 0;
