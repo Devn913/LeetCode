@@ -5,7 +5,7 @@ class Solution {
         for(int i = 0;i<prices.length;i++){
             int val = prices[i] - minTillNow;
             if(val>max) max = val;
-            if(prices[i]<minTillNow)  minTillNow = prices[i];
+            minTillNow = Math.min(minTillNow,prices[i]);
         }
         return max;
     }
