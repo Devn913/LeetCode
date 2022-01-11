@@ -13,8 +13,6 @@ class Solution {
                     else low = mid+1;
                 }
                 return false;
-            }else if(matrix[i][0]>target || matrix[i][col-1]>target){
-                break;
             }
         }
         return false;
