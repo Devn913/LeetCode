@@ -3,7 +3,7 @@ class Solution {
         int row = matrix.length;
         int col = matrix[0].length;
         for(int i = 0;i<row;i++){
-            if(matrix[i][col-1]>=target && matrix[i][0]<=target){
+            if(matrix[i][col-1]>=target ){
                 row = 0;
                 col = matrix[0].length -1;
                 while(row<=col){
