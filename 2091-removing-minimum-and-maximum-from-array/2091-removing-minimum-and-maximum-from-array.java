@@ -8,10 +8,11 @@ class Solution {
             if(nums[i]<nums[min]) min  = i;
             if(nums[i]>nums[max]) max  = i;
         }
-        int res = Integer.MAX_VALUE;
-        res = Math.min(res,Math.max(min,max)+1);
-        res = Math.min(res,len - Math.min(min,max));
-        res = Math.min(res,Math.min(min,max) +1 + len - Math.max(min,max));
-        return res;
+        if(min>max){
+            int temp = min;
+            min = max;
+            max = temp;
+        }
+        return Math.min(max+1,Math.min(len - min, min + 1 + len - max));
     }
 }
