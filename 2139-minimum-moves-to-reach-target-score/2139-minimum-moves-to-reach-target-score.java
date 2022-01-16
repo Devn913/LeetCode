@@ -5,8 +5,10 @@ class Solution {
             if(maxDoubles==0) break;
             if(target%2==0){
                 target = target/2;
+                target++;
                 maxDoubles--;
-            }else target--;
+            }
+            target--;
             res++;
         }
         return res + target -1;
