@@ -1,25 +1,16 @@
 class Solution {
     public int findTheWinner(int n, int k) {
-        if(k == 1) return n;
-        boolean[] val = new boolean[n];
+        Queue<Integer> q = new LinkedList<>();
+        for(int i = 1;i<=n;i++) q.add(i);
         int counter = 0;
-        int a = 0;
-        int resetK = 0;
-        while(counter!=n){
-            if(val[a] ==  false) resetK++;
-            if(resetK == k){
-                val[a] = true;
+        while(q.size()!=1){
+            while(counter!=k-1){
+                q.add(q.remove());
                 counter++;
-                resetK = 0;
             }
-            a++;
-            if(a==n) a = 0;
-
+            q.remove();
+            counter = 0;
         }
-        if(a == 0){
-            if(val[a] == false) return a;
-            else return n;
-        }
-        return a;
+        return q.peek();
     }
 }
