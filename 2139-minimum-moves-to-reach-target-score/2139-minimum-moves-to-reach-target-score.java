@@ -8,10 +8,7 @@ class Solution {
             }else{
                 target--;
             }
-            if(maxDoubles==0){
-                res+=target;
-                break;
-            }
+            if(maxDoubles==0) return res+target;
             res++;
         }
         return res;
