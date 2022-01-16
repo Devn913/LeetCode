@@ -11,8 +11,7 @@ class Solution {
                     if(seats[end] == 1) break;
                     end++;
                 }
-                if(end>=seats.length) ans = Math.max(ans, end - start);
-                else if(start == 0) ans = Math.max(ans,end-start);
+                if(end>=seats.length || start == 0) ans = Math.max(ans,end-start);
                 else if((end-start)%2==0){
                     ans = Math.max(ans,(end - start)/2);
                 }else{
