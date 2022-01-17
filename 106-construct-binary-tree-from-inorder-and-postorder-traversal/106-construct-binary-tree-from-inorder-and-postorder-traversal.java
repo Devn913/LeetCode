@@ -16,10 +16,11 @@
 class Solution {
     public TreeNode buildTreeHelper(int[] inorder, int inStart, int inEnd, int[] postorder, int postStart, int postEnd){
         if(inStart>inEnd) return null;
-        TreeNode root = new TreeNode(postorder[postEnd]);
+        int val = postorder[postEnd];
+        TreeNode root = new TreeNode(val);
         int index = inStart;
         for(;index<=inEnd;index++){
-            if(inorder[index] == postorder[postEnd]) break;
+            if(inorder[index] == val) break;
         }
         int leftTreeSize = index - inStart;
         int rightTreeSize = inEnd - index;
