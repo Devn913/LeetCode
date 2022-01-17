@@ -8,6 +8,7 @@ class Solution {
                 if(!(map.get(pattern.charAt(i)).equals(list[i]))) return false;
             }else map.put(pattern.charAt(i),list[i]);
         }
+        map.clear();
         HashMap<String,Character> map1 = new HashMap<>();
         for(int i = 0;i<list.length;i++){
             if(map1.containsKey(list[i]) && map1.get(list[i]) != pattern.charAt(i)) return false;
