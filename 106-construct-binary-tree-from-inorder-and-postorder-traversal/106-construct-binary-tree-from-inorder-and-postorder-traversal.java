@@ -21,8 +21,10 @@ class Solution {
         for(;index<=inEnd;index++){
             if(inorder[index] == postorder[postEnd]) break;
         }
-        root.left = buildTreeHelper(inorder,inStart,index-1,postorder,postStart,postStart + index - inStart - 1);
-        root.right = buildTreeHelper(inorder,index+1,inEnd,postorder,postEnd -(inEnd - index) ,postEnd-1);
+        int leftTreeSize = index - inStart;
+        int rightTreeSize = inEnd - index;
+        root.left = buildTreeHelper(inorder,inStart,index-1,postorder,postStart,postStart + leftTreeSize - 1);
+        root.right = buildTreeHelper(inorder,index+1,inEnd,postorder,postEnd -rightTreeSize ,postEnd-1);
         return root;
     }
     public TreeNode buildTree(int[] inorder, int[] postorder) {
