@@ -18,8 +18,6 @@ class Solution {
         if(inStart>inEnd) return null;
         int val = preorder[preStart];
         TreeNode root = new TreeNode(val);
-        if (inStart == inEnd)
-            return root;
         int index = inStart;
         while(index<=inEnd){
             if(inorder[index] == val) break;
@@ -27,7 +25,6 @@ class Solution {
         }
         root.left = buildTreeHelper(inorder,inStart,index-1,preorder,preStart+1);
         root.right = buildTreeHelper(inorder,index+1,inEnd,preorder,preStart + index - inStart + 1);
-
         return root;
     }
     public TreeNode buildTree(int[] preorder, int[] inorder) {
