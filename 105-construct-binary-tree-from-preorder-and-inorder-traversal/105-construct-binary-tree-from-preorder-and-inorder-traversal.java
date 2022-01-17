@@ -18,6 +18,8 @@ class Solution {
         if(inStart>inEnd) return null;
         int val = preorder[preStart];
         TreeNode root = new TreeNode(val);
+        if (inStart == inEnd)
+            return root;
         int index = inStart;
         while(index<=inEnd){
             if(inorder[index] == val) break;
