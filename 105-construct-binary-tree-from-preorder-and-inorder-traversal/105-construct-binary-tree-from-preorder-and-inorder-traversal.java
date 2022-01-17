@@ -21,8 +21,7 @@ class Solution {
         if (inStart == inEnd)
             return root;
         int index = inStart;
-        while(index<=inEnd){
-            if(inorder[index] == val) break;
+        while(inorder[index] != val){
             index++;
         }
         root.left = buildTreeHelper(inorder,inStart,index-1,preorder,preStart+1);
