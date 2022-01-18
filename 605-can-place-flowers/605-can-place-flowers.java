@@ -15,8 +15,7 @@ class Solution {
         if(n==0) return true;
         while(i<len -2){
             if(flowerbed[i] == 0 && flowerbed[i+1] == 0 && flowerbed[i+2] == 0){
-                i = i+1;
-                flowerbed[i] = 1;
+                flowerbed[++i] = 1;
                 n--;
             }
             i = i+1;
