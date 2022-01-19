@@ -14,19 +14,22 @@ class Solution {
         for(int i = start+1;i<end;i++){
             swap(matrix,start,i,i,end);
             swap(matrix,i,start,end,i);
-            // swap(matrix,)
         }
         int counter = 1;
         for(int i = start+1;i<end;i++){
             swap(matrix,start,i,end,end - counter);
             counter++;
         }
-        start++;
-        end--;
-        rotateHelper(matrix,start,end);
     }
     
     public void rotate(int[][] matrix) {
-        rotateHelper(matrix,0,matrix.length -1);
+        int len = matrix.length - 1;
+        int i = 0;
+        while(i<len){
+            rotateHelper(matrix,i,len);
+            i++;
+            len--;
+            
+        }
     }
 }
