@@ -20,16 +20,12 @@ class Solution {
             swap(matrix,start,i,end,end - counter);
             counter++;
         }
+        start++;
+        end--;
+        rotateHelper(matrix,start,end);
     }
     
     public void rotate(int[][] matrix) {
-        int len = matrix.length - 1;
-        int i = 0;
-        while(i<len){
-            rotateHelper(matrix,i,len);
-            i++;
-            len--;
-            
-        }
+        rotateHelper(matrix,0,matrix.length -1);
     }
 }
