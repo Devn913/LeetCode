@@ -2,7 +2,7 @@ class Solution {
     
     public int minEatingSpeed(int[] piles, int h) {
         int max = 0;
-        int min = 0;
+        int min = 1;
         for(int num: piles){
             max = Math.max(num,max);
         }
