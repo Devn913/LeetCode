@@ -2,9 +2,7 @@ class Solution {
     
     public boolean canEat(int[] piles, int h, int speed){
         int res = 0;
-        for(int num: piles){
-            res += (int)Math.ceil(num*1.0/speed);
-        }
+        for(int num: piles) res += (int)Math.ceil(num*1.0/speed);
         return h>=res;
     }
     
@@ -17,7 +15,7 @@ class Solution {
         if(piles.length == h) return max;
         int speed = max;
         while(min<=max){
-            int mid = (min+max)/2;
+            int mid = min + (max-min)/2;
             if(canEat(piles,h,mid)){
                 speed = mid;
                 max = mid-1;
