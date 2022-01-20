@@ -19,7 +19,7 @@ class Solution {
         while(min<=max){
             int mid = (min+max)/2;
             if(canEat(piles,h,mid)){
-                speed = Math.min(speed,mid);
+                speed = mid;
                 max = mid-1;
             }else{
                 min = mid+1;
