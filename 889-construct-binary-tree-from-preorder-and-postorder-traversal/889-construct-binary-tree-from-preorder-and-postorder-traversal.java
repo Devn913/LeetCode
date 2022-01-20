@@ -23,10 +23,8 @@ class Solution {
             if(postorder[index] == preorder[preStart+1]) break;
             index++;
         }
-        int leftTreeSize = index - posStart+1;
-        int rightTreeSize = posEnd - index - 1;
-        root.left = contructFromPrePost(preorder,preStart+1,preStart+leftTreeSize,postorder,posStart,index);
-        root.right = contructFromPrePost(preorder,preEnd- rightTreeSize+1,preEnd,postorder,index+1,posEnd-1);
+        root.left = contructFromPrePost(preorder,preStart+1,preStart+index - posStart+1,postorder,posStart,index);
+        root.right = contructFromPrePost(preorder,preEnd - ( posEnd - index - 1)+1,preEnd,postorder,index+1,posEnd-1);
         return root;
     }
     public TreeNode constructFromPrePost(int[] preorder, int[] postorder) {
