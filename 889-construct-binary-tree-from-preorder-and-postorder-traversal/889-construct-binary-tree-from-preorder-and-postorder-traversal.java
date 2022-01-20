@@ -30,6 +30,7 @@ class Solution {
         return root;
     }
     public TreeNode constructFromPrePost(int[] preorder, int[] postorder) {
-        return contructFromPrePost(preorder,0,preorder.length -1, postorder, 0, postorder.length-1);
+        int len = preorder.length-1;
+        return contructFromPrePost(preorder,0,len, postorder, 0, len);
     }
 }
