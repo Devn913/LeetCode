@@ -18,10 +18,10 @@ class Solution {
         if(preStart>preEnd) return null;
         TreeNode root = new TreeNode(preorder[preStart]);
         if(preStart==preEnd) return root;
-        int index = posEnd;
+        int index = posStart;
         while(index>=posStart){
             if(postorder[index] == preorder[preStart+1]) break;
-            index--;
+            index++;
         }
         int leftTreeSize = index - posStart+1;
         int rightTreeSize = posEnd - index - 1;
