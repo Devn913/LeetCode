@@ -13,41 +13,34 @@
  *     }
  * }
  */
+
 class Solution {
-    public List<Integer> toList(TreeNode root){
-        if(root==null) return  new ArrayList<>(0);
-        List<Integer> list = new ArrayList<>();
-        list.addAll(toList(root.left));
-        list.add(root.val);
-        list.addAll(toList(root.right));
-        return list;
-    }
-    
     public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
-        List<Integer>  list1 = toList(root1);
-        List<Integer>  list2 = toList(root2);
-        List<Integer> list = new ArrayList<>();
-        int i =0;
-        int j = 0;
-        while(i<list1.size() || j<list2.size()){
-            if(i==list1.size()){
-                list.add(list2.get(j));
-                j++;
-                continue;
+        Stack<TreeNode> st1 = new Stack<>();
+        Stack<TreeNode> st2 = new Stack<>();
+        
+        List<Integer> res = new ArrayList<>();
+        
+        while(root1 != null || root2 != null || !st1.empty() || !st2.empty()){
+            while(root1 != null){
+                st1.push(root1);
+                root1 = root1.left;
             }
-            if(j==list2.size()){
-                list.add(list1.get(i));
-                i++;
-                continue;
+            while(root2 != null){
+                st2.push(root2);
+                root2 = root2.left;
             }
-            if(list1.get(i)>=list2.get(j)){
-                list.add(list2.get(j));
-                j++;
-            }else{
-                list.add(list1.get(i));
-                i++;
+            if(st2.empty() || (!st1.empty() && st1.peek().val <= st2.peek().val)){
+                root1 = st1.pop();
+                res.add(root1.val);
+                root1 = root1.right;
+            }
+            else{
+                root2 = st2.pop();
+                res.add(root2.val);
+                root2 = root2.right;
             }
         }
-        return list;
+        return res;
     }
 }
