@@ -14,20 +14,12 @@
  * }
  */
 class Solution {
+    int pre = 0;
     public TreeNode convertBST(TreeNode root) {
-        TreeNode root2 = root;
-        Stack<TreeNode> s = new Stack<>();
-        int sum = 0;
-        while(!s.empty() || root!=null){
-            while(root!=null){
-                s.push(root);
-                root = root.right;
-            }
-            root = s.pop();
-            sum+=root.val;
-            root.val = sum;
-            root = root.left; 
-        }
-        return root2;
+        if(root == null) return root;
+        if(root.right!=null) convertBST(root.right);
+        pre = root.val = pre+root.val;
+        if (root.left != null) convertBST(root.left);
+        return root;
     }
 }
