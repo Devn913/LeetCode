@@ -27,9 +27,9 @@ class Solution {
                 if(front.left!=null) q.offer(front.left);
                 if(front.right!=null) q.offer(front.right);
             }
-            list.add(temp);
+            list.add(0,temp);
         }
-        Collections.reverse(list);
+        // Collections.reverse(list);
         return list;
         
         
