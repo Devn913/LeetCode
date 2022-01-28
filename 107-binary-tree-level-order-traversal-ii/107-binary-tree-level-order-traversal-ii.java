@@ -15,7 +15,7 @@
  */
 class Solution {
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
-        List<List<Integer>> list = new ArrayList<>();
+        List<List<Integer>> list = new LinkedList<List<Integer>>();
         if(root == null) return list;
         Queue<TreeNode> q = new LinkedList<>();
         q.offer(root);
@@ -27,9 +27,9 @@ class Solution {
                 if(front.left!=null) q.offer(front.left);
                 if(front.right!=null) q.offer(front.right);
             }
-            list.add(temp);
+            list.add(0,temp);
         }
-        Collections.reverse(list);
+        // Collections.reverse(list);
         return list;
         
         
