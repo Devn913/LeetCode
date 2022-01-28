@@ -15,7 +15,6 @@
  */
 class Solution {
     public TreeNode bstToGst(TreeNode root) {
-        // if(root =)
         TreeNode root2 = root;
         Stack<TreeNode> s = new Stack<>();
         int sum = 0;
