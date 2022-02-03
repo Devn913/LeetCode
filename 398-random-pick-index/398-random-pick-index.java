@@ -1,7 +1,7 @@
 class Solution {
     HashMap<Integer,List<Integer>> map;
     public Solution(int[] nums) {
-        map = new HashMap<>();
+        map = new HashMap<>(nums.length);
         for(int i = 0;i<nums.length;i++){
             List<Integer> list = map.getOrDefault(nums[i],new ArrayList<Integer>());
             list.add(i);
