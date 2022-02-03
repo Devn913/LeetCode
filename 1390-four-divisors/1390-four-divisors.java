@@ -9,7 +9,6 @@ class Solution {
                 sum+=i;
                 sum+=(num/i);
             }
-            if(counter>4) return 0;
         }
         if(i*i == num){
             counter++;
