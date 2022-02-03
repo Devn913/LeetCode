@@ -3,15 +3,9 @@ class Solution {
     public Solution(int[] nums) {
         map = new HashMap<>();
         for(int i = 0;i<nums.length;i++){
-            if(map.containsKey(nums[i])){
-                List<Integer> list = map.get(nums[i]);
-                list.add(i);
-                map.put(nums[i],list);
-            }else{
-                List<Integer> list = new ArrayList<>();
-                list.add(i);
-                map.put(nums[i],list);
-            }
+            List<Integer> list = map.getOrDefault(nums[i],new ArrayList<Integer>());
+            list.add(i);
+            map.put(nums[i],list);
         }
     }
     public int pick(int target) {
