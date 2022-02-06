@@ -6,7 +6,7 @@ class Solution {
             negative = true;
             num = -num;
         }
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>(15);
         int zeros = 0;
         while(num!=0){
             long digit = num%10;
