@@ -12,14 +12,11 @@ class Solution {
             rightMost = right[n - i - 1];
         }
         int[] res = new int[n];
-        for(int i = 0;i<n;i++){
-            if(i == 0){
-                res[i] = right[i+1];
-            }else if(i == n -1){
-                res[i] = left[i - 1];
-            }else{
-                res[i] = left[i-1] * right[i+1];
-            }
+        res[0] = right[1];
+        res[n - 1] = left[n - 2];
+        
+        for(int i = 1;i<n - 1;i++){
+            res[i] = left[i-1] * right[i+1];
         }
         return res;
     }
