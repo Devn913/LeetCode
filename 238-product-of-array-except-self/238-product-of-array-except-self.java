@@ -14,7 +14,6 @@ class Solution {
         int[] res = new int[n];
         res[0] = right[1];
         res[n - 1] = left[n - 2];
-        
         for(int i = 1;i<n - 1;i++){
             res[i] = left[i-1] * right[i+1];
         }
