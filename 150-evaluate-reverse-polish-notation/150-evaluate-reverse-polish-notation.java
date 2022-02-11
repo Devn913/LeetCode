@@ -5,14 +5,11 @@ class Solution {
             if(t.equals("+")){
                 s.push(s.pop() + s.pop());
             }else if(t.equals("-")){
-                
                 int first = s.pop();
-                int second = s.pop();
-                s.push(second - first);                
+                s.push(s.pop() - first);                
             }else if(t.equals("/")){
                 int first = s.pop();
-                int second = s.pop();
-                s.push(second/first);
+                s.push(s.pop()/first);
             }else if(t.equals("*")){
                 s.push(s.pop() * s.pop());
                 
