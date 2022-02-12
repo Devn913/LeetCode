@@ -10,11 +10,12 @@ class Solution {
         int currentGas = 0;
         for(int i = 0;i<gas.length;i++){
             currentGas = currentGas + gas[i] - cost[i];
-            if(currentGas>=0 && start == -1) start = i;
-            else if(currentGas<0){
-                currentGas =0;
+            if(currentGas<0){
+                currentGas = 0;
                 start = -1;
+                continue;
             }
+            if(start == -1) start = i;
         }
         return start;
     }
