@@ -30,8 +30,6 @@ class Solution {
         }
         return list;
     }
-    
-    
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         return combinationSumHelper(target,candidates,0);
     }
