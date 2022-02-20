@@ -14,14 +14,13 @@ class Solution {
         head = head.next;
         while(head!=null){
             ListNode temp = head;
-            int sum = 0;
+            head = head.next;
             while(head.val!=0){
-                sum+=head.val;
+                temp.val+=head.val;
                 head = head.next;
             }
-            temp.val = sum;
-            temp.next = head.next;
             head = head.next;
+            temp.next = head;
         }
         return head2.next;
     }
