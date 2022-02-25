@@ -1,3 +1,4 @@
+[Discussion Post (created on 25/1/2022 at 19:3)](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/discuss/1798742/Java-Fastest-100)  
 <h2>34. Find First and Last Position of Element in Sorted Array</h2><h3>Medium</h3><hr><div><p>Given an array of integers <code>nums</code> sorted in non-decreasing order, find the starting and ending position of a given <code>target</code> value.</p>
 
 <p>If <code>target</code> is not found in the array, return <code>[-1, -1]</code>.</p>
