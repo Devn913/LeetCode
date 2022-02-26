@@ -14,16 +14,20 @@
  * }
  */
 class Solution {
-    public Pair<Integer,Integer> kHelper(TreeNode root,int k){
-        if(root == null) return new Pair<Integer,Integer>(-1,k);
-        Pair<Integer,Integer> left = kHelper(root.left,k);
-        if(left.getKey()!=-1) return left;
-        k = left.getValue();
-        k--;
-        if(k==0) return new Pair<Integer,Integer>(root.val,k);
-        return kHelper(root.right,k);
+    int val;
+    public int helper(TreeNode root){
+        if(root == null) return -1;
+        if(val == 0) return root.val;
+        int ans = helper(root.left);
+        if(ans!=-1) return ans;
+        val--;
+        if(val == 0) return root.val;
+        ans = helper(root.right);
+        return ans;
+        
     }
     public int kthSmallest(TreeNode root, int k) {
-        return kHelper(root,k).getKey();
+        val = k;
+        return helper(root);
     }
 }
