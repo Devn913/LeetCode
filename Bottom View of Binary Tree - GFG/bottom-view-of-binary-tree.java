@@ -130,24 +130,21 @@ class Solution
     public ArrayList <Integer> bottomView(Node root)
     {
         HashMap<Integer,Integer> map = new HashMap<>();
-        int min = 0;
-        int max = 0;
         Queue<pair> q = new LinkedList<>();
+        int min = 0;
         q.add(new pair(root,0));
         while(!q.isEmpty()){
-            pair front = q.remove();
-            min = Math.min(min,front.level);
-            max = Math.max(max,front.level);
-            map.put(front.level,front.root.data);
-            if(front.root.left!=null) q.add(new pair(front.root.left,front.level-1));
-            if(front.root.right!=null) q.add(new pair(front.root.right,front.level+1));
+            pair p = q.remove();
+            map.put(p.level,p.root.data);
+            if(p.root.left!=null) q.add(new pair(p.root.left,p.level - 1));
+            if(p.root.right!=null) q.add(new pair(p.root.right,p.level + 1));
+            min = Math.min(min,p.level);
         }
-        ArrayList<Integer> list = new ArrayList<>(map.size());
-        while(min<=max){
+        ArrayList<Integer> list = new ArrayList<>();
+        while(map.containsKey(min)){
             list.add(map.get(min));
             min++;
         }
         return list;
-        
     }
 }
