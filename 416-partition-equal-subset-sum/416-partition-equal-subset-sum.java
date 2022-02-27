@@ -15,7 +15,7 @@ class Solution {
                     if(j>=val) dp[i][j] = dp[i-1][j-val];
                 }
             }
-            // if(dp[i][sum]) return true;
+            if(dp[i][sum]) return true;
         }
         return dp[nums.length][sum];
     }
