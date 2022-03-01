@@ -8,7 +8,7 @@ class Solution {
         else ans = Math.min(ans,minCost(cost,currentIndex+1,dp));
         if(dp[currentIndex+2] != -1) ans = Math.min(ans,dp[currentIndex+2]);
         else ans = Math.min(ans,minCost(cost,currentIndex+2,dp));
-        dp[currentIndex] =cost[currentIndex] +  ans;
+        dp[currentIndex] = cost[currentIndex] +  ans;
         return dp[currentIndex];
     }
     public int minCostClimbingStairs(int[] cost) {
