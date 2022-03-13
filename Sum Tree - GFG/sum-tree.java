@@ -133,11 +133,7 @@ class Solution
         pair right = helper(root.right);
         if(left.isSumTree && right.isSumTree){
             if(left.isNull && right.isNull) return new pair(true,root.data,false);
-            else if(left.isNull){
-                if(root.data == right.sum) return new pair(true,root.data+right.sum,false);
-            }else if(right.isNull){
-                if(root.data == left.sum) return new pair(true,root.data+left.sum,false);
-            }else if(root.data == left.sum + right.sum){
+            else if(root.data == left.sum + right.sum){
                 return new pair(true,root.data+left.sum+right.sum,false);
             }
         }
