@@ -6,7 +6,6 @@ class Solution {
             if(arr[i]>arr[largest]){
                 secondLargest = arr[largest];
                 largest = i;
-                continue;
             }else if(arr[i]>secondLargest){
                 secondLargest = arr[i];
             }
