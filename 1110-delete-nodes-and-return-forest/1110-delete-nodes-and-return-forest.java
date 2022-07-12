@@ -18,6 +18,7 @@ class Solution {
         List<TreeNode> list = new ArrayList<>();
         if(root == null) return list;
         if(set.contains(root.val)){
+            set.remove(root.val);
             list.addAll(delNodesHelper(root.left,set));            
             list.addAll(delNodesHelper(root.right,set));
             return list;
