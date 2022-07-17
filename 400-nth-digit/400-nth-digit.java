@@ -4,7 +4,7 @@ class Solution {
         if(n==Integer.MAX_VALUE) return 2; 
         int weight = 1;
         int counter = 1;
-        long place =10;
+        int place =10;
         int num = 1;
         while(counter+weight <=n){
             counter+=weight;
