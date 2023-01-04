@@ -20,15 +20,11 @@ class Solution {
         for(int num: tasks){
             map.put(num,map.getOrDefault(num,0)+1);
         }
-        HashMap<Integer,Integer> minTaskMap = new HashMap<>();
-        minTaskMap.put(1,-1);
-        minTaskMap.put(2,1);
-        minTaskMap.put(3,1);
         int ans = 0;
-        for(Map.Entry<Integer,Integer> entry: map.entrySet()){
-            int temp = min(entry.getValue(),minTaskMap);
-            if(temp==-1) return -1;
-            ans+=temp;
+        for(int val: map.values()){
+            if(val == 1) return -1;
+            if(val%3==0) ans+=val/3;
+            else ans+=(val/3 +1);
         }
         return ans;
     }
