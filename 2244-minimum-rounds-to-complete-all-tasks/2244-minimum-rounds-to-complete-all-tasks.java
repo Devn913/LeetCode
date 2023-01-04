@@ -1,8 +1,5 @@
 class Solution {
     public int min(int val, HashMap<Integer,Integer> map){
-        if(val==2) return 1;
-        if(val ==3) return 1;
-        if(val == -1) return -1;
         if(map.containsKey(val)) return map.get(val);
         int temp1 = min(val-2,map);
         int temp2 = min(val-3,map);
@@ -20,20 +17,16 @@ class Solution {
     }
     public int minimumRounds(int[] tasks) {
         HashMap<Integer,Integer> map = new HashMap<>();
-        int max = 0;
         for(int num: tasks){
             map.put(num,map.getOrDefault(num,0)+1);
-            max = Math.max(max,num);
         }
-        HashMap<Integer,Integer> map2 = new HashMap<>();
-        map2.put(1,-1);
-        map2.put(2,1);
-        map2.put(3,1);
-        
+        HashMap<Integer,Integer> minTaskMap = new HashMap<>();
+        minTaskMap.put(1,-1);
+        minTaskMap.put(2,1);
+        minTaskMap.put(3,1);
         int ans = 0;
         for(Map.Entry<Integer,Integer> entry: map.entrySet()){
-            int val = entry.getValue();
-            int temp = min(val,map2);
+            int temp = min(entry.getValue(),minTaskMap);
             if(temp==-1) return -1;
             ans+=temp;
         }
