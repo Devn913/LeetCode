@@ -1,1 +1,1 @@
-Slope of a line
+Slope of a line.
