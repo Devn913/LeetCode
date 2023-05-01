@@ -7,7 +7,7 @@ class Solution {
                 set.clear();
                 ans++;
             }
-            set.add( s.charAt(i));
+            set.add(s.charAt(i));
         }
         return ans;
     }
