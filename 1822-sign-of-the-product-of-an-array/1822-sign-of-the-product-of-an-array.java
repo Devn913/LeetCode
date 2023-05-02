@@ -1,11 +1,11 @@
 class Solution {
     public int arraySign(int[] nums) {
-        int ans = 0;
+        boolean negative = false;
         for(int val: nums){
             if(val==0) return 0;
-            else if(val<0) ans++;
+            else if(val<0) negative = !negative;
         }
-        if(ans%2==0) return 1;
+        if(negative == false) return 1;
         return -1;
     }
 }
