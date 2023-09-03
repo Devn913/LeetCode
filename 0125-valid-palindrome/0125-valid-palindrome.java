@@ -1,23 +1,22 @@
 class Solution {
-    public boolean isPalnindrome(String s){
+    public boolean isPalindrome(String s) {
         int low = 0;
-        int high = s.length()-1;
+        int high = s.length() - 1;
         while(low<high){
-            if(s.charAt(low) != s.charAt(high)) return false;
+            int code1 = Character.toLowerCase(s.charAt(low));
+            if(!((code1>96 && code1 <123) || (code1 >47 && code1<58))){
+                low++;
+                continue;
+            }
+            int code2 = Character.toLowerCase(s.charAt(high));
+            if(!((code2>96 && code2<123) || (code2 >47 && code2<58))){
+                high--;
+                continue;
+            }
+            if(code1!=code2) return false;
             low++;
             high--;
         }
         return true;
-    }
-    public boolean isPalindrome(String s) {
-        StringBuilder sb = new StringBuilder();
-        for(int i =0;i<s.length();i++){
-            int code = Character.toLowerCase(s.charAt(i));
-            if((code>96 && code <123) || (code >47 & code<58)){
-                sb.append((char) code);
-            }
-        }
-        s = sb.toString();
-        return isPalnindrome(s);
     }
 }
