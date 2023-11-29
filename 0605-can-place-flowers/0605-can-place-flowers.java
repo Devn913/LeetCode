@@ -18,6 +18,7 @@ class Solution {
                 n--;
             }
         }
+        if(n<=0) return true;
         if(flowerbed[flowerbed.length-1]==0 && flowerbed[flowerbed.length-2]==0){
             flowerbed[flowerbed.length-1]=1;
             n--;
