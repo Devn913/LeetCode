@@ -1,57 +1,55 @@
 class Solution {
-
-    public List<Integer> survivedRobotsHealths(
-        int[] positions,
-        int[] healths,
-        String directions
-    ) {
-        int n = positions.length;
-        Integer[] indices = new Integer[n];
-        List<Integer> result = new ArrayList<>();
-        Stack<Integer> stack = new Stack<>();
-
-        for (int index = 0; index < n; ++index) {
-            indices[index] = index;
+    public class Robot implements Comparable<Robot>{
+        int position;
+        int health;
+        char direction;
+        int index;
+        public Robot(int p, int h, char d, int realIndex){
+            position = p;
+            health = h;
+            direction = d;
+            index = realIndex;
         }
-
-        Arrays.sort(
-            indices,
-            (lhs, rhs) -> Integer.compare(positions[lhs], positions[rhs])
-        );
-
-        for (int currentIndex : indices) {
-            // Add right-moving robots to the stack
-            if (directions.charAt(currentIndex) == 'R') {
-                stack.push(currentIndex);
-            } else {
-                while (!stack.isEmpty() && healths[currentIndex] > 0) {
-                    // Pop the top robot from the stack for collision check
-                    int topIndex = stack.pop();
-
-                    // Top robot survives, current robot is destroyed
-                    if (healths[topIndex] > healths[currentIndex]) {
-                        healths[topIndex] -= 1;
-                        healths[currentIndex] = 0;
-                        stack.push(topIndex);
-                    } else if (healths[topIndex] < healths[currentIndex]) {
-                        // Current robot survives, top robot is destroyed
-                        healths[currentIndex] -= 1;
-                        healths[topIndex] = 0;
-                    } else {
-                        // Both robots are destroyed
-                        healths[currentIndex] = 0;
-                        healths[topIndex] = 0;
-                    }
+        @Override
+        public int compareTo(Robot r){
+            return this.position - r.position ;
+        }
+    }
+    public List<Integer> survivedRobotsHealths(int[] positions, int[] healths, String directions) {
+        List<Integer> list = new ArrayList<>();
+        for(int i =0;i<positions.length;i++){
+            list.add(-1);
+        }
+        Robot[] r = new Robot[positions.length];
+        for(int i = 0;i<positions.length;i++){
+            r[i] = new Robot(positions[i],healths[i],directions.charAt(i),i);
+        }
+        Arrays.sort(r);
+        Stack<Robot> answer = new Stack<>();
+        int index = 0;
+        while(index<r.length){
+            if(answer.isEmpty()){ answer.push(r[index++]); continue;}
+            if(answer.peek().direction =='R' && r[index].direction=='L'){
+                if(answer.peek().health>r[index].health){
+                    answer.peek().health-=1;
+                    index++;
+                }else if(answer.peek().health==r[index].health){
+                    answer.pop();
+                    index++;
+                }else{
+                    answer.pop();
+                    r[index].health-=1;
                 }
-            }
+            }else{
+                answer.push(r[index++]);
+            }            
         }
-
-        // Collect surviving robots
-        for (int index = 0; index < n; ++index) {
-            if (healths[index] > 0) {
-                result.add(healths[index]);
-            }
+        while(!answer.isEmpty()){
+            list.set(answer.peek().index,answer.pop().health);
         }
-        return result;
+        list.removeIf(element -> element == -1);
+        // list.add(r[0].position);
+        return list;
+        
     }
 }
