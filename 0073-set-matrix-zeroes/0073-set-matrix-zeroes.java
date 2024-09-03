@@ -15,16 +15,9 @@ class Solution {
         for(int i =0;i<matrix.length;i++){
             for(int j = 0;j<matrix[i].length;j++){
                 if(matrix[i][j] == 0){
-                    if(!(rowSet.contains(i))){
-
-                        rowSet.add(i);
-                    }
-                    if(!(colSet.contains(j))){
-
-                        colSet.add(j);
-                    } 
+                    rowSet.add(i);
+                    colSet.add(j);
                 }
-
             }
         }
         for(int ele: rowSet){
