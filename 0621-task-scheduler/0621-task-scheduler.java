@@ -1,38 +1,24 @@
 class Solution {
     public int leastInterval(char[] tasks, int n) {
-        // Build frequency map
-        int[] freq = new int[26];
-        for (char ch : tasks) {
-            freq[ch - 'A']++;
+        // freq array to store the frequency of each task
+        int[] freq = new int[26];  
+        int maxCount = 0;
+
+        // Count the frequency of each task and find the maximum frequency
+        for (char task : tasks) {
+            freq[task - 'A']++;
+            maxCount = Math.max(maxCount, freq[task - 'A']);
         }
-        
-        // Max heap to store frequencies
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
-        for (int i = 0; i < 26; i++) {
-            if (freq[i] > 0) {
-                pq.offer(freq[i]);
+
+        // Calculate the total time needed for execution
+        int time = (maxCount - 1) * (n + 1);
+        for (int f : freq) {
+            if (f == maxCount) {
+                time++;
             }
         }
 
-        int time = 0;
-        // Process tasks until the heap is empty
-        while (!pq.isEmpty()) {
-            int cycle = n + 1;
-            List<Integer> store = new ArrayList<>();
-            int taskCount = 0;
-            // Execute tasks in each cycle
-            while (cycle-- > 0 && !pq.isEmpty()) {
-                int currentFreq = pq.poll();
-                if (currentFreq > 1) {
-                    store.add(currentFreq - 1);
-                }
-                taskCount++;
-            }
-            // Restore updated frequencies to the heap
-            store.forEach(pq::offer);
-            // Add time for the completed cycle
-            time += (pq.isEmpty() ? taskCount : n + 1);
-        }
-        return time;
+        // Return the maximum of total time needed and the length of the task list
+        return Math.max(tasks.length, time);
     }
 }
