@@ -12,18 +12,29 @@ class Solution {
 //         }       
 //     }
     public int findMinDifference(List<String> timePoints) {
-        int[] nums = new int[timePoints.size()];
+        boolean[] minutes = new boolean[1440];
         for(int i =0;i<timePoints.size();i++){
             int hour = Integer.parseInt(timePoints.get(i).substring(0,2));
-            int minutes = Integer.parseInt(timePoints.get(i).substring(3));
-            nums[i] = hour*60+minutes;
+            int min = Integer.parseInt(timePoints.get(i).substring(3));
+            if(minutes[hour*60+min] ==true){
+                return 0;
+            }
+            minutes[hour*60+min] = true;
         }
-        Arrays.sort(nums);
+        int prevIndex = Integer.MAX_VALUE;
+        int firstIndex = Integer.MAX_VALUE;
+        int lastIndex = Integer.MAX_VALUE;
         int ans = Integer.MAX_VALUE;
-        for(int i =0;i<nums.length-1 && ans!=0;i++){
-            ans = Math.min(ans,nums[i+1]-nums[i]);
+        for(int i = 0;i<1440;i++){
+            if(minutes[i]){
+                if(prevIndex!=Integer.MAX_VALUE){
+                    ans = Math.min(ans,i-prevIndex);
+                }
+                prevIndex = i;
+                if(firstIndex == Integer.MAX_VALUE) firstIndex = i;
+                lastIndex = i;
+            }
         }
-        ans = Math.min(ans,1440-nums[nums.length-1]+nums[0]); // total number of minutes in a day = 24*60 = 1440
-        return ans;
+        return Math.min(ans,1440 - lastIndex + firstIndex);
     }
 }
