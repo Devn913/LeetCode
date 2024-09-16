@@ -12,51 +12,29 @@ class Solution {
 //         }       
 //     }
     public int findMinDifference(List<String> timePoints) {
-        int res = Integer.MAX_VALUE;
-        int N = timePoints.size();
-        int[] times = new int[1441];
-        int curr = 0;
-
-        for (int i = 0; i < N; i++) {
-            String s = timePoints.get(i);
-            curr = Integer.parseInt(s.substring(0, 2)) * 60 + Integer.parseInt(s.substring(3, 5));
-            if (Integer.parseInt(s.substring(0, 2)) == 0 && Integer.parseInt(s.substring(3, 5)) == 0) {
-                System.out.println("zero" + times[1440]);
-                ++times[1440];
-                times[0]++;
-            } else {
-                ++times[curr];
-            }
-        }
-        int firstIndex = -1;
-        int lastIndex = -1;
-        for (int i = 1; i <= 1440; i++) {
-            if (times[i] == 0) {
-                continue;
-            }
-            
-            if(firstIndex==-1) firstIndex = i;
-            if(lastIndex==-1) lastIndex = i;   
-            if (times[i] > 1) {
+        boolean[] minutes = new boolean[1440];
+        for(int i =0;i<timePoints.size();i++){
+            int hour = Integer.parseInt(timePoints.get(i).substring(0,2));
+            int min = Integer.parseInt(timePoints.get(i).substring(3));
+            if(minutes[hour*60+min] ==true){
                 return 0;
             }
-
-            int next = i + 1;
-            // 1439 1440
-            // 1    1
-            while (next <= 1440 && times[next] == 0) {
-                next++;
-                
-            }
-            if(next <= 1440)
-            {
-                res = Math.min(res, next - i);
-                lastIndex = next;
-            }
-        
-            i = next-1;
-            
+            minutes[hour*60+min] = true;
         }
-        return Math.min(res,1440-lastIndex+firstIndex);
+        int prevIndex = Integer.MAX_VALUE;
+        int firstIndex = Integer.MAX_VALUE;
+        int lastIndex = Integer.MAX_VALUE;
+        int ans = Integer.MAX_VALUE;
+        for(int i = 0;i<1440;i++){
+            if(minutes[i]){
+                if(prevIndex!=Integer.MAX_VALUE){
+                    ans = Math.min(ans,i-prevIndex);
+                }
+                prevIndex = i;
+                if(firstIndex == Integer.MAX_VALUE) firstIndex = i;
+                lastIndex = i;
+            }
+        }
+        return Math.min(ans,1440 - lastIndex + firstIndex);
     }
 }
