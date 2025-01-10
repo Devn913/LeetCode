@@ -12,17 +12,17 @@ class Solution {
                     countOne++;
             }
         }
-        int currentIndex = 0;
+        int currentIndex = -1;
         while(0<countZero--){
-            nums[currentIndex++] = 0;
+            nums[++currentIndex] = 0;
             // countZero--;
         }
         while(0<countOne--){
-            nums[currentIndex++] = 1;
+            nums[++currentIndex] = 1;
             // countOne--;
         }
-        while(currentIndex<n){
-            nums[currentIndex++] = 2;
+        while(currentIndex<n-1){
+            nums[++currentIndex] = 2;
         }
     }
 }
