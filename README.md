@@ -8,9 +8,18 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0073-set-matrix-zeroes](https://github.com/Devn913/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Devn913/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 ## Binary Search
 |  |
 | ------- |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Devn913/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+## Hash Table
+|  |
+| ------- |
+| [0073-set-matrix-zeroes](https://github.com/Devn913/LeetCode/tree/master/0073-set-matrix-zeroes) |
+## Matrix
+|  |
+| ------- |
+| [0073-set-matrix-zeroes](https://github.com/Devn913/LeetCode/tree/master/0073-set-matrix-zeroes) |
 <!---LeetCode Topics End-->
