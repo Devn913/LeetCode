@@ -1,31 +1,68 @@
 class Solution {
-    public void setRowZero(int[][] matrix, int row){
-        for(int i = 0;i<matrix[0].length;i++){
-            matrix[row][i] = 0;
-        }
-    }
-    public void setColZero(int[][] matrix, int col){
-        for(int i = 0;i<matrix.length;i++){
-            matrix[i][col] = 0;
-        }
-    }
     public void setZeroes(int[][] matrix) {
-        Set<Integer> rowSet = new HashSet<>();
-        Set<Integer> colSet = new HashSet<>();
-        for(int i =0;i<matrix.length;i++){
-            for(int j = 0;j<matrix[i].length;j++){
-                if(matrix[i][j] == 0){
-                    rowSet.add(i);
-                    colSet.add(j);
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+
+        boolean first_row_has_zero = false;
+        boolean first_col_has_zero = false;
+
+        // check if first row has any zero
+        for(int c = 0;c<cols;c++){
+            if(matrix[0][c] == 0){
+                first_row_has_zero = true;
+                break;
+            }
+        }
+
+        // check if first col has any zero
+        for(int r = 0;r<rows;r++){
+            if(matrix[r][0] == 0){
+                first_col_has_zero = true;
+                break;
+            }
+        }
+        // checking for zero elsewhere and keeping track of it in the first row and first column
+        for(int r = 1;r<rows;r++){
+            for(int c = 1;c<cols;c++){
+                if(matrix[r][c] == 0){
+                    matrix[r][0] = 0;
+                    matrix[0][c] = 0;
                 }
             }
         }
-        for(int ele: rowSet){
-            setRowZero(matrix,ele);
+
+        // checking and setting respcted row to zero
+        for(int c = 1;c<cols; c++){
+            if(matrix[0][c] == 0){
+                for(int r = 0;r<rows;r++){
+                    matrix[r][c] = 0;
+                }
+            }
         }
-        for(int ele: colSet){
-            setColZero(matrix,ele);
+
+        // checking and setting respcted cols to zero
+        for(int r = 1;r<rows; r++){
+            if(matrix[r][0] == 0){
+                for(int c = 0;c<cols;c++){
+                    matrix[r][c] = 0;
+                }
+            }
         }
-    
+
+        if(first_row_has_zero == true){
+            for(int c = 0;c<cols;c++){
+                matrix[0][c] = 0;
+            }
+        }
+
+        if(first_col_has_zero == true){
+            for(int r = 0;r<rows;r++){
+                matrix[r][0] = 0;
+            }
+        }
+
+
+        
+        
     }
 }
