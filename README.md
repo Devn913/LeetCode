@@ -42,4 +42,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0075-sort-colors](https://github.com/Devn913/LeetCode/tree/master/0075-sort-colors) |
+## Tree
+|  |
+| ------- |
+| [0543-diameter-of-binary-tree](https://github.com/Devn913/LeetCode/tree/master/0543-diameter-of-binary-tree) |
+## Depth-First Search
+|  |
+| ------- |
+| [0543-diameter-of-binary-tree](https://github.com/Devn913/LeetCode/tree/master/0543-diameter-of-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0543-diameter-of-binary-tree](https://github.com/Devn913/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 <!---LeetCode Topics End-->
