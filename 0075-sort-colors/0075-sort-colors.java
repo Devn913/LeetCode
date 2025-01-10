@@ -1,6 +1,5 @@
 class Solution {
     public void sortColors(int[] nums) {
-        int n = nums.length;
         int countZero = 0;
         int countOne  =  0;
         for(int num: nums){
@@ -21,7 +20,7 @@ class Solution {
             nums[++currentIndex] = 1;
             // countOne--;
         }
-        while(currentIndex<n-1){
+        while(currentIndex<nums.length-1){
             nums[++currentIndex] = 2;
         }
     }
