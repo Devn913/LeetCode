@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0075-sort-colors](https://github.com/Devn913/LeetCode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/Devn913/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0118-pascals-triangle](https://github.com/Devn913/LeetCode/tree/master/0118-pascals-triangle) |
+| [0152-maximum-product-subarray](https://github.com/Devn913/LeetCode/tree/master/0152-maximum-product-subarray) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Devn913/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Devn913/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/Devn913/LeetCode/tree/master/0169-majority-element) |
@@ -44,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0053-maximum-subarray](https://github.com/Devn913/LeetCode/tree/master/0053-maximum-subarray) |
 | [0062-unique-paths](https://github.com/Devn913/LeetCode/tree/master/0062-unique-paths) |
 | [0118-pascals-triangle](https://github.com/Devn913/LeetCode/tree/master/0118-pascals-triangle) |
+| [0152-maximum-product-subarray](https://github.com/Devn913/LeetCode/tree/master/0152-maximum-product-subarray) |
 ## Divide and Conquer
 |  |
 | ------- |
