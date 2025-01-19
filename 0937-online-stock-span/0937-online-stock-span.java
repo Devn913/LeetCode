@@ -1,5 +1,5 @@
 class StockSpanner {
-    ArrayList<Integer> list;
+    ArrayList<Pair<Integer,Integer>> list;
 
     public StockSpanner() {
         list = new ArrayList<>();
@@ -9,11 +9,12 @@ class StockSpanner {
         int index = list.size() - 1;
         int ans = 1;
         while(index!=-1){
-            if(list.get(index)>price) break;
-            index--;
-            ans++;
+            if(list.get(index).getKey()>price) break;
+            int span = list.get(index).getValue();
+            ans+=span;
+            index-=span;
         }
-        list.add(price);
+        list.add(new Pair(price,ans));
         return ans;
     }
 }
