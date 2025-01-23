@@ -19,6 +19,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Devn913/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Devn913/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/Devn913/LeetCode/tree/master/0169-majority-element) |
+| [0200-number-of-islands](https://github.com/Devn913/LeetCode/tree/master/0200-number-of-islands) |
 | [0229-majority-element-ii](https://github.com/Devn913/LeetCode/tree/master/0229-majority-element-ii) |
 | [0287-find-the-duplicate-number](https://github.com/Devn913/LeetCode/tree/master/0287-find-the-duplicate-number) |
 ## Binary Search
@@ -39,6 +40,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0048-rotate-image](https://github.com/Devn913/LeetCode/tree/master/0048-rotate-image) |
 | [0073-set-matrix-zeroes](https://github.com/Devn913/LeetCode/tree/master/0073-set-matrix-zeroes) |
+| [0200-number-of-islands](https://github.com/Devn913/LeetCode/tree/master/0200-number-of-islands) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -74,6 +76,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/Devn913/LeetCode/tree/master/0200-number-of-islands) |
 | [0337-house-robber-iii](https://github.com/Devn913/LeetCode/tree/master/0337-house-robber-iii) |
 | [0543-diameter-of-binary-tree](https://github.com/Devn913/LeetCode/tree/master/0543-diameter-of-binary-tree) |
 ## Binary Tree
@@ -121,4 +124,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0937-online-stock-span](https://github.com/Devn913/LeetCode/tree/master/0937-online-stock-span) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/Devn913/LeetCode/tree/master/0200-number-of-islands) |
+## Union Find
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/Devn913/LeetCode/tree/master/0200-number-of-islands) |
 <!---LeetCode Topics End-->
