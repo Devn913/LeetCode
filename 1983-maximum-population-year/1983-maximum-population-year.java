@@ -1,8 +1,8 @@
 class Solution {
     public int maximumPopulation(int[][] logs) {
         int[] population = new int[101];
-        for(int[] entry: logs){
-            for(int i = entry[0];i<entry[1];i++){
+        for(int start =0;start<logs.length;start++){
+            for(int i = logs[start][0];i<logs[start][1];i++){
                 population[i-1950]++;
             }
         }
