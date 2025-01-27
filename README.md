@@ -23,6 +23,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0229-majority-element-ii](https://github.com/Devn913/LeetCode/tree/master/0229-majority-element-ii) |
 | [0287-find-the-duplicate-number](https://github.com/Devn913/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [1983-maximum-population-year](https://github.com/Devn913/LeetCode/tree/master/1983-maximum-population-year) |
+| [3398-make-a-square-with-the-same-color](https://github.com/Devn913/LeetCode/tree/master/3398-make-a-square-with-the-same-color) |
 ## Binary Search
 |  |
 | ------- |
@@ -42,6 +43,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0048-rotate-image](https://github.com/Devn913/LeetCode/tree/master/0048-rotate-image) |
 | [0073-set-matrix-zeroes](https://github.com/Devn913/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0200-number-of-islands](https://github.com/Devn913/LeetCode/tree/master/0200-number-of-islands) |
+| [3398-make-a-square-with-the-same-color](https://github.com/Devn913/LeetCode/tree/master/3398-make-a-square-with-the-same-color) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -148,4 +150,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1983-maximum-population-year](https://github.com/Devn913/LeetCode/tree/master/1983-maximum-population-year) |
+## Enumeration
+|  |
+| ------- |
+| [3398-make-a-square-with-the-same-color](https://github.com/Devn913/LeetCode/tree/master/3398-make-a-square-with-the-same-color) |
 <!---LeetCode Topics End-->
