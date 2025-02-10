@@ -139,6 +139,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0143-reorder-list](https://github.com/Devn913/LeetCode/tree/master/0143-reorder-list) |
 | [0937-online-stock-span](https://github.com/Devn913/LeetCode/tree/master/0937-online-stock-span) |
+| [3447-clear-digits](https://github.com/Devn913/LeetCode/tree/master/3447-clear-digits) |
 ## Design
 |  |
 | ------- |
@@ -194,4 +195,9 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/Devn913/LeetCode/tree/master/0049-group-anagrams) |
+| [3447-clear-digits](https://github.com/Devn913/LeetCode/tree/master/3447-clear-digits) |
+## Simulation
+|  |
+| ------- |
+| [3447-clear-digits](https://github.com/Devn913/LeetCode/tree/master/3447-clear-digits) |
 <!---LeetCode Topics End-->
