@@ -26,6 +26,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0268-missing-number](https://github.com/Devn913/LeetCode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/Devn913/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [1983-maximum-population-year](https://github.com/Devn913/LeetCode/tree/master/1983-maximum-population-year) |
+| [2107-find-unique-binary-string](https://github.com/Devn913/LeetCode/tree/master/2107-find-unique-binary-string) |
 | [2448-count-number-of-bad-pairs](https://github.com/Devn913/LeetCode/tree/master/2448-count-number-of-bad-pairs) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/Devn913/LeetCode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 | [3372-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/Devn913/LeetCode/tree/master/3372-longest-strictly-increasing-or-strictly-decreasing-subarray) |
@@ -47,6 +48,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0169-majority-element](https://github.com/Devn913/LeetCode/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/Devn913/LeetCode/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/Devn913/LeetCode/tree/master/0268-missing-number) |
+| [2107-find-unique-binary-string](https://github.com/Devn913/LeetCode/tree/master/2107-find-unique-binary-string) |
 | [2448-count-number-of-bad-pairs](https://github.com/Devn913/LeetCode/tree/master/2448-count-number-of-bad-pairs) |
 ## Matrix
 |  |
@@ -189,6 +191,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0039-combination-sum](https://github.com/Devn913/LeetCode/tree/master/0039-combination-sum) |
+| [2107-find-unique-binary-string](https://github.com/Devn913/LeetCode/tree/master/2107-find-unique-binary-string) |
 ## Interactive
 |  |
 | ------- |
@@ -198,6 +201,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0049-group-anagrams](https://github.com/Devn913/LeetCode/tree/master/0049-group-anagrams) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/Devn913/LeetCode/tree/master/2021-remove-all-occurrences-of-a-substring) |
+| [2107-find-unique-binary-string](https://github.com/Devn913/LeetCode/tree/master/2107-find-unique-binary-string) |
 | [3447-clear-digits](https://github.com/Devn913/LeetCode/tree/master/3447-clear-digits) |
 ## Simulation
 |  |
