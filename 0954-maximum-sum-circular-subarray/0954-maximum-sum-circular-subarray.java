@@ -1,28 +1,23 @@
 class Solution {
-    int total;
-    public int maxSubarraySumCircular(int[] nums) {
-        int max = kadanes(nums, true);
-        int min = kadanes(nums, false);
-        return max > 0 ? Math.max(max, total - min) : max;
-    }
+    public int maxSubarraySumCircular(int[] arr) {
 
-    private int kadanes(int[] nums, boolean isMax) {
-        total = 0; 
+        // kadane's algorithms
+        int totalSum = 0;
+        int maxSum = Integer.MIN_VALUE;
+        int currMaxSum = 0;
+        int minSum = Integer.MAX_VALUE;
+        int currMinSum = 0;
 
-        int current = 0; 
-        int sum = nums[0]; 
-
-        for (int num : nums) {
-            total += num;
-
-            if (isMax) {
-                current = Math.max(current + num, num);
-                sum = Math.max(sum, current);
-            } else {
-                current = Math.min(current + num, num);
-                sum = Math.min(sum, current);
-            }
+        for(int num: arr){
+            currMaxSum+=num;
+            currMinSum+=num;
+            maxSum = Math.max(maxSum,currMaxSum);
+            minSum = Math.min(minSum,currMinSum);
+            if(currMinSum>0) currMinSum= 0;
+            if(currMaxSum<0) currMaxSum= 0;
+            totalSum+=num;
         }
-        return sum; 
+        if(totalSum==minSum) return maxSum;
+        return Math.max(totalSum-minSum,maxSum);
     }
 }
