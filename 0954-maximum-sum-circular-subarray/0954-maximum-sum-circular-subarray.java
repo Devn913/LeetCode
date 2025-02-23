@@ -1,35 +1,28 @@
 class Solution {
-        public int kad_max(int[] arr){
-        int maxSum = Integer.MIN_VALUE;
-        int currSum = 0;
-        for(int i = 0;i<arr.length;i++){
-            currSum += arr[i];
-            maxSum = Math.max(maxSum,currSum); 
-            if(currSum<0) currSum = 0;
-        }
-        return maxSum;
+    int total;
+    public int maxSubarraySumCircular(int[] nums) {
+        int max = kadanes(nums, true);
+        int min = kadanes(nums, false);
+        return max > 0 ? Math.max(max, total - min) : max;
     }
-    public int kad_min(int[] arr){
-        int minSum = Integer.MAX_VALUE;
-        int currSum = 0;
-        for(int i = 0;i<arr.length;i++){
-            currSum += arr[i];
-            minSum = Math.min(minSum,currSum); 
-            if(currSum>0) currSum = 0;
+
+    private int kadanes(int[] nums, boolean isMax) {
+        total = 0; 
+
+        int current = 0; 
+        int sum = nums[0]; 
+
+        for (int num : nums) {
+            total += num;
+
+            if (isMax) {
+                current = Math.max(current + num, num);
+                sum = Math.max(sum, current);
+            } else {
+                current = Math.min(current + num, num);
+                sum = Math.min(sum, current);
+            }
         }
-        return minSum;
-    }
-    public int maxSubarraySumCircular(int[] arr) {
-        int totalSum = 0;
-        for(int num: arr){
-            totalSum+=num;
-        }
-        int minSum = kad_min(arr);
-        int maxSum = kad_max(arr);
-        System.out.println(minSum);
-        System.out.println(maxSum);
-        System.out.println(totalSum);
-        if(totalSum==minSum) return maxSum;
-        return Math.max(totalSum-minSum,maxSum);
+        return sum; 
     }
 }
