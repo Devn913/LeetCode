@@ -16,7 +16,7 @@ class Solution {
             }
             count = count % 1000000007;
         }
-        return (int)count;
+        return count;
 
     }
 }
