@@ -1,6 +1,6 @@
 class Solution {
     public int numOfSubarrays(int[] arr) {
-        long count = 0;
+        int count = 0;
         int evenCount = 1;
         int oddCount  = 0;
         long prefixSum = 0;
@@ -14,9 +14,7 @@ class Solution {
                 count+=(evenCount);
                 oddCount++;
             }
-            if(count>Integer.MAX_VALUE){
-                count = count % 1000000007;
-            }
+            count = count % 1000000007;
         }
         return (int)count;
 
