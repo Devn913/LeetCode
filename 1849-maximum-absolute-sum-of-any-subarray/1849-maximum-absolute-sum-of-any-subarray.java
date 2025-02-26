@@ -1,18 +1,16 @@
 class Solution {
-    public int maxAbsoluteSum(int[] arr) {
+    public int maxAbsoluteSum(int[] nums) {
         int maxSum = Integer.MIN_VALUE;
-        int currMaxSum = 0;
         int minSum = Integer.MAX_VALUE;
-        int currMinSum = 0;
-
-        for(int num: arr){
-            currMaxSum+=num;
-            currMinSum+=num;
-            maxSum = Math.max(maxSum,currMaxSum);
-            minSum = Math.min(minSum,currMinSum);
-            if(currMinSum>0) currMinSum= 0;
-            if(currMaxSum<0) currMaxSum= 0;
-
+        int currMax = 0;
+        int currMin = 0;
+        for(int i =0;i<nums.length;i++){
+            currMax +=nums[i];
+            currMin +=nums[i];
+            maxSum = Math.max(maxSum,currMax);
+            minSum = Math.min(minSum,currMin);
+            if(currMax<0) currMax = 0;
+            if(currMin>0) currMin = 0;
         }
         return Math.max(maxSum,Math.abs(minSum));
     }
