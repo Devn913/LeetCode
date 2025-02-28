@@ -245,6 +245,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Devn913/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0038-count-and-say](https://github.com/Devn913/LeetCode/tree/master/0038-count-and-say) |
 | [0049-group-anagrams](https://github.com/Devn913/LeetCode/tree/master/0049-group-anagrams) |
 | [1093-recover-a-tree-from-preorder-traversal](https://github.com/Devn913/LeetCode/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1170-shortest-common-supersequence](https://github.com/Devn913/LeetCode/tree/master/1170-shortest-common-supersequence) |
