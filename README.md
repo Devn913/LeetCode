@@ -57,6 +57,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0003-longest-substring-without-repeating-characters](https://github.com/Devn913/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/Devn913/LeetCode/tree/master/0049-group-anagrams) |
 | [0073-set-matrix-zeroes](https://github.com/Devn913/LeetCode/tree/master/0073-set-matrix-zeroes) |
+| [0138-copy-list-with-random-pointer](https://github.com/Devn913/LeetCode/tree/master/0138-copy-list-with-random-pointer) |
 | [0169-majority-element](https://github.com/Devn913/LeetCode/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/Devn913/LeetCode/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/Devn913/LeetCode/tree/master/0268-missing-number) |
@@ -238,6 +239,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/Devn913/LeetCode/tree/master/0021-merge-two-sorted-lists) |
+| [0138-copy-list-with-random-pointer](https://github.com/Devn913/LeetCode/tree/master/0138-copy-list-with-random-pointer) |
 | [0143-reorder-list](https://github.com/Devn913/LeetCode/tree/master/0143-reorder-list) |
 ## Backtracking
 |  |
