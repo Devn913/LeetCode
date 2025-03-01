@@ -1,3 +1,7 @@
+
+
+// Approach - 1: HashMap with Priority queue
+
 class Solution {
     public class Node implements Comparable<Node>{
         int num;
