@@ -38,6 +38,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2448-count-number-of-bad-pairs](https://github.com/Devn913/LeetCode/tree/master/2448-count-number-of-bad-pairs) |
 | [2551-apply-operations-to-an-array](https://github.com/Devn913/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 | [2564-most-profitable-path-in-a-tree](https://github.com/Devn913/LeetCode/tree/master/2564-most-profitable-path-in-a-tree) |
+| [2707-merge-two-2d-arrays-by-summing-values](https://github.com/Devn913/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/Devn913/LeetCode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
 | [3372-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/Devn913/LeetCode/tree/master/3372-longest-strictly-increasing-or-strictly-decreasing-subarray) |
 | [3398-make-a-square-with-the-same-color](https://github.com/Devn913/LeetCode/tree/master/3398-make-a-square-with-the-same-color) |
@@ -67,6 +68,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2107-find-unique-binary-string](https://github.com/Devn913/LeetCode/tree/master/2107-find-unique-binary-string) |
 | [2427-first-letter-to-appear-twice](https://github.com/Devn913/LeetCode/tree/master/2427-first-letter-to-appear-twice) |
 | [2448-count-number-of-bad-pairs](https://github.com/Devn913/LeetCode/tree/master/2448-count-number-of-bad-pairs) |
+| [2707-merge-two-2d-arrays-by-summing-values](https://github.com/Devn913/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [3541-report-spam-message](https://github.com/Devn913/LeetCode/tree/master/3541-report-spam-message) |
 ## Matrix
 |  |
@@ -105,6 +107,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Devn913/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0287-find-the-duplicate-number](https://github.com/Devn913/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [2551-apply-operations-to-an-array](https://github.com/Devn913/LeetCode/tree/master/2551-apply-operations-to-an-array) |
+| [2707-merge-two-2d-arrays-by-summing-values](https://github.com/Devn913/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 ## Sorting
 |  |
 | ------- |
