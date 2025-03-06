@@ -4,8 +4,8 @@ class Solution {
         int high = x;
         int ans = low + ((high-low) / 2);
         while (low <= high) {
-            long mid = low + ((high-low) / 2);
-            if (mid * mid > x) {
+            int mid = low + ((high-low) / 2);
+            if (1l*mid * mid  > x) {
                 high = (int) mid - 1;
             } else {
                 ans = (int) mid;
