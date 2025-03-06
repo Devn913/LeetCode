@@ -49,6 +49,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Search
 |  |
 | ------- |
+| [0069-sqrtx](https://github.com/Devn913/LeetCode/tree/master/0069-sqrtx) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Devn913/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Devn913/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0268-missing-number](https://github.com/Devn913/LeetCode/tree/master/0268-missing-number) |
@@ -161,6 +162,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0048-rotate-image](https://github.com/Devn913/LeetCode/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/Devn913/LeetCode/tree/master/0050-powx-n) |
 | [0062-unique-paths](https://github.com/Devn913/LeetCode/tree/master/0062-unique-paths) |
+| [0069-sqrtx](https://github.com/Devn913/LeetCode/tree/master/0069-sqrtx) |
 | [0268-missing-number](https://github.com/Devn913/LeetCode/tree/master/0268-missing-number) |
 | [0326-power-of-three](https://github.com/Devn913/LeetCode/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/Devn913/LeetCode/tree/master/0342-power-of-four) |
