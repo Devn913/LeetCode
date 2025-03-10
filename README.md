@@ -80,6 +80,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/Devn913/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [3227-find-missing-and-repeated-values](https://github.com/Devn913/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
 | [3541-report-spam-message](https://github.com/Devn913/LeetCode/tree/master/3541-report-spam-message) |
+| [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/Devn913/LeetCode/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
 ## Matrix
 |  |
 | ------- |
@@ -289,6 +290,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/Devn913/LeetCode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [3447-clear-digits](https://github.com/Devn913/LeetCode/tree/master/3447-clear-digits) |
 | [3541-report-spam-message](https://github.com/Devn913/LeetCode/tree/master/3541-report-spam-message) |
+| [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/Devn913/LeetCode/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
 ## Simulation
 |  |
 | ------- |
@@ -328,6 +330,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0239-sliding-window-maximum](https://github.com/Devn913/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/Devn913/LeetCode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [3483-alternating-groups-ii](https://github.com/Devn913/LeetCode/tree/master/3483-alternating-groups-ii) |
+| [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/Devn913/LeetCode/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
 ## Bucket Sort
 |  |
 | ------- |
