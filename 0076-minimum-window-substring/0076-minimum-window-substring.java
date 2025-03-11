@@ -7,11 +7,11 @@ class Solution {
     }
     public String minWindow(String s, String t) {
         if(t.length()>s.length()) return "";
-        int[] freqT = new int[256];
+        int[] freqT = new int[128];
         for(int i = 0;i<t.length();i++){
             freqT[(int) t.charAt(i)]++;
         }
-        int[] freqCurrentWindow = new int[256];
+        int[] freqCurrentWindow = new int[128];
         int currentStart = 0;
         int currentEnd   = Integer.MAX_VALUE;
         int start = 0;
