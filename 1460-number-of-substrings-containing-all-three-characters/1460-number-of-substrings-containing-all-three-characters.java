@@ -6,7 +6,7 @@ class Solution {
         int N = s.length();
         int answer = 0;
         freq[s.charAt(start)-'a']++;
-        while(end<N){
+        while(start<N && end<N){
             if(freq[0] > 0 && freq[1] > 0 && freq[2] > 0){
                 answer+=(N - end);
                 freq[s.charAt(start)-'a']--;
@@ -14,10 +14,10 @@ class Solution {
             }else if(end<N-1){
                 end++;
                 freq[s.charAt(end)-'a']++;
-            }else if(start<N){
+            }else{
                 freq[s.charAt(start)-'a']--;
                 start++;
-            }else break;
+            }
         }
         return answer;
     }
