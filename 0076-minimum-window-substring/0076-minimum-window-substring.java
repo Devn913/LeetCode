@@ -23,11 +23,8 @@ class Solution {
                     currentEnd = end;
                     currentStart = start;
                 }
-                if(start<s.length()){
-                    freqCurrentWindow[(int) s.charAt(start)]--;
-                    start++;
-                }else break;
-               
+                freqCurrentWindow[(int) s.charAt(start)]--;
+                start++;               
             }else if(end<s.length()-1){
                 end++;
                 freqCurrentWindow[(int) s.charAt(end)]++;
