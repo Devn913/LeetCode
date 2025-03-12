@@ -1,14 +1,15 @@
 class Solution {
-    public double myPow(double x, int n) {
-        long nn = n;   
-        if(n<0) { nn = -1*nn; x = 1/x;}
-        double tempAns = x;
+    public double myPow(double x, long n) {
+        if(n<0) {
+            n = -1*n;
+            x = 1/x;
+        }
         double ans = 1;
-        while(nn!=0){
-            int bit =(int) (nn & 1);
-            if(bit==1) ans = ans*tempAns;
-            tempAns = tempAns*tempAns;
-            nn = nn >> 1;
+        while(n!=0){
+            int bit =(int) (n & 1);
+            if(bit==1) ans = ans*x;
+            x = x*x;
+            n = n >> 1;
         }
         return ans;
     }
