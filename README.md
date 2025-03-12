@@ -44,6 +44,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2448-count-number-of-bad-pairs](https://github.com/Devn913/LeetCode/tree/master/2448-count-number-of-bad-pairs) |
 | [2551-apply-operations-to-an-array](https://github.com/Devn913/LeetCode/tree/master/2551-apply-operations-to-an-array) |
 | [2564-most-profitable-path-in-a-tree](https://github.com/Devn913/LeetCode/tree/master/2564-most-profitable-path-in-a-tree) |
+| [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/Devn913/LeetCode/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/Devn913/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
 | [3227-find-missing-and-repeated-values](https://github.com/Devn913/LeetCode/tree/master/3227-find-missing-and-repeated-values) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/Devn913/LeetCode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
@@ -64,6 +65,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0287-find-the-duplicate-number](https://github.com/Devn913/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0374-guess-number-higher-or-lower](https://github.com/Devn913/LeetCode/tree/master/0374-guess-number-higher-or-lower) |
 | [0907-koko-eating-bananas](https://github.com/Devn913/LeetCode/tree/master/0907-koko-eating-bananas) |
+| [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/Devn913/LeetCode/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 ## Hash Table
 |  |
 | ------- |
@@ -209,6 +211,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1983-maximum-population-year](https://github.com/Devn913/LeetCode/tree/master/1983-maximum-population-year) |
 | [2427-first-letter-to-appear-twice](https://github.com/Devn913/LeetCode/tree/master/2427-first-letter-to-appear-twice) |
 | [2448-count-number-of-bad-pairs](https://github.com/Devn913/LeetCode/tree/master/2448-count-number-of-bad-pairs) |
+| [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/Devn913/LeetCode/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 ## Combinatorics
 |  |
 | ------- |
