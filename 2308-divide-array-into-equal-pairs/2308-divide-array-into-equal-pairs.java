@@ -29,16 +29,32 @@
 //     }
 // }
 
+// class Solution {
+//     public boolean divideArray(int[] arr) {
+//     // Approach 3: using Frequency array.
+//     // Time: O(n), Space: O(1)
+//         int[] freq = new int[501];
+//         for(int num: arr){
+//             freq[num]++;
+//         }
+//         for(int i = 0;i<=500;i++){
+//             if(freq[i]%2!=0) return false;
+//         }
+//         return true;
+//     }
+// }
+
+
 class Solution {
     public boolean divideArray(int[] arr) {
-    // Approach 3: using Frequency array.
+    // Approach 4: using boolean Frequency array.
     // Time: O(n), Space: O(1)
-        int[] freq = new int[501];
+        boolean[] freq = new boolean[501];
         for(int num: arr){
-            freq[num]++;
+            freq[num] = !freq[num];
         }
         for(int i = 0;i<=500;i++){
-            if(freq[i]%2!=0) return false;
+            if(freq[i]) return false;
         }
         return true;
     }
