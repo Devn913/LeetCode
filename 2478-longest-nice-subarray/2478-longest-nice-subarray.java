@@ -1,39 +1,27 @@
 class Solution {
-    public boolean checkFrequency(int[] bitFrequecy){
-        for(int i = 0;i<32;i++){
-            if(bitFrequecy[i]>1) return false;
-        }
-        return true;
-    }
+
     public int longestNiceSubarray(int[] nums) {
         int ans   = 0;
         int start = 0;
         int end   = 0;
-        int[] bitFreq = new int[32];
-
+        int curr  = 0;
         while(end<nums.length){
-            while(checkFrequency(bitFreq)){
-                
-                ans = Math.max(ans,end-start);
-                if(end == nums.length) break;
-                int num = nums[end];
+            while(end< nums.length && (curr & nums[end]) == 0 ){
+                curr = curr | nums[end];
+                ans = Math.max(ans,end-start+1);
                 end++;
-                int index = 0;
-                while(num!=0){
-                    if( (num & 1) != 0 ) bitFreq[index]++;
-                    num = num >> 1 ;
-                    index++;
-                }
+
             }
-            int index = 0;
-            int num = nums[start];
-            while(num!=0){
-                if(num%2!=0) bitFreq[index]--;
-                num = num/2;
-                index++;
-            }
+            curr = curr ^ nums[start];
             start++;
         }
         return ans;
     }
 }
+/*
+0 1 1 0 1
+
+
+0 1 0 0 0
+
+*/
