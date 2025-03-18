@@ -10,9 +10,7 @@ class Solution {
         int start = 0;
         int end   = 0;
         int[] bitFreq = new int[32];
-        // for(int i = 0;i<32;i++){
-        //     bitFreq[i] = 0;
-        // }
+
         while(end<nums.length){
             while(checkFrequency(bitFreq)){
                 
@@ -22,8 +20,8 @@ class Solution {
                 end++;
                 int index = 0;
                 while(num!=0){
-                    if(num%2!=0) bitFreq[index]++;
-                    num = num / 2 ;
+                    if( (num & 1) != 0 ) bitFreq[index]++;
+                    num = num >> 1 ;
                     index++;
                 }
             }
