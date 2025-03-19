@@ -188,6 +188,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 |  |
 | ------- |
+| [0029-divide-two-integers](https://github.com/Devn913/LeetCode/tree/master/0029-divide-two-integers) |
 | [0048-rotate-image](https://github.com/Devn913/LeetCode/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/Devn913/LeetCode/tree/master/0050-powx-n) |
 | [0062-unique-paths](https://github.com/Devn913/LeetCode/tree/master/0062-unique-paths) |
@@ -204,6 +205,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bit Manipulation
 |  |
 | ------- |
+| [0029-divide-two-integers](https://github.com/Devn913/LeetCode/tree/master/0029-divide-two-integers) |
 | [0201-bitwise-and-of-numbers-range](https://github.com/Devn913/LeetCode/tree/master/0201-bitwise-and-of-numbers-range) |
 | [0268-missing-number](https://github.com/Devn913/LeetCode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/Devn913/LeetCode/tree/master/0287-find-the-duplicate-number) |
