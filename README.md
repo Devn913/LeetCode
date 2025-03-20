@@ -224,6 +224,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0021-merge-two-sorted-lists](https://github.com/Devn913/LeetCode/tree/master/0021-merge-two-sorted-lists) |
 | [0050-powx-n](https://github.com/Devn913/LeetCode/tree/master/0050-powx-n) |
 | [0143-reorder-list](https://github.com/Devn913/LeetCode/tree/master/0143-reorder-list) |
+| [0206-reverse-linked-list](https://github.com/Devn913/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0326-power-of-three](https://github.com/Devn913/LeetCode/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/Devn913/LeetCode/tree/master/0342-power-of-four) |
 ## Counting
@@ -306,6 +307,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0138-copy-list-with-random-pointer](https://github.com/Devn913/LeetCode/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/Devn913/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0143-reorder-list](https://github.com/Devn913/LeetCode/tree/master/0143-reorder-list) |
+| [0206-reverse-linked-list](https://github.com/Devn913/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/Devn913/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 ## Backtracking
 |  |
