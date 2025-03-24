@@ -9,17 +9,22 @@
  * }
  */
 class Solution {
-    public ListNode helper(HashSet<Integer> set, ListNode head){
+    public ListNode helper(boolean[] freq, ListNode head){
         if(head == null) return head;
-        if(set.contains(head.val)) return helper(set, head.next);
-        head.next = helper(set, head.next);
+        if(head.val<freq.length && freq[head.val]) return helper(freq, head.next);
+        head.next = helper(freq, head.next);
         return head;
     }
     public ListNode modifiedList(int[] nums, ListNode head) {
         HashSet<Integer> set = new HashSet<>();
-        for(int num: nums){
-            set.add(num);
+        int max = -1;
+        for (int num : nums) {
+            max = Math.max(max, num);
         }
-        return helper(set, head);
+
+        // Create a boolean lookup table
+        boolean[] freq = new boolean[max + 1];
+        for (int num : nums) freq[num] = true;
+        return helper(freq, head);
     }
 }
