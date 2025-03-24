@@ -1,61 +1,41 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
 class Solution {
-    public ListNode reverse(ListNode head){
-        if(head == null || head.next == null) return head;
-        ListNode next = head.next;
-        ListNode curr = head;
-        ListNode prev = null;
-        while(next != null){
-            curr.next = prev;
-            prev  = curr;
-            curr = next;
-            next = next.next;
-        }
-        curr.next = prev;
-        return curr;
-    }
     public ListNode reverseBetween(ListNode head, int left, int right) {
-        if(left == right) return head;
-        if(left == 1){
-            int index = 1;
-            ListNode temp = head;
-            ListNode temp2 = head;
-            while(index!=right){
-                temp2 = temp2.next;
-                index++;
-            }   
-            ListNode last = temp2.next;
-            temp2.next = null;
-            head = reverse(head);
-            temp.next = last;
+        int i =1;
+        int j =1;
+        if(head == null){
+            return null;
+        }
+        if(head.next == null){
             return head;
+        }
+        if(left >= right){
+            return head;
+        }
+        reverseBetween(head,left+1,right-1);
+        ListNode curr1 = head;
+        ListNode curr2 = head;
+        while(i<left){
+          curr1 = curr1.next;
+          i++;
+        }
+        while(j<right){
+            curr2 = curr2.next;
+            j++;
+        }
+        int temp = curr1.val;
+        curr1.val = curr2.val;
+        curr2.val = temp;
 
-        }
-        ListNode temp = head;
-        int index = 1;
-        while(index!=left-1){
-            temp = temp.next;
-            index++;
-        }
-
-        ListNode temp2 = temp;
-        while(index!=right){
-            temp2 = temp2.next;
-            index++;
-        }
-        if(temp2.next == null){
-            ListNode reverseHead =temp.next;
-            temp.next = reverse(reverseHead);
-        }else{
-            ListNode reverseHead = temp.next;
-            ListNode last = temp2.next;
-            temp2.next = null;
-            temp.next = reverse(reverseHead);
-            while(temp.next!=null){
-                temp = temp.next;
-            }
-            temp.next = last;
-        }
         return head;
-        
     }
 }
