@@ -148,6 +148,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0142-linked-list-cycle-ii](https://github.com/Devn913/LeetCode/tree/master/0142-linked-list-cycle-ii) |
 | [0143-reorder-list](https://github.com/Devn913/LeetCode/tree/master/0143-reorder-list) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/Devn913/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0234-palindrome-linked-list](https://github.com/Devn913/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0287-find-the-duplicate-number](https://github.com/Devn913/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0908-middle-of-the-linked-list](https://github.com/Devn913/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/Devn913/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
@@ -234,6 +235,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0050-powx-n](https://github.com/Devn913/LeetCode/tree/master/0050-powx-n) |
 | [0143-reorder-list](https://github.com/Devn913/LeetCode/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/Devn913/LeetCode/tree/master/0206-reverse-linked-list) |
+| [0234-palindrome-linked-list](https://github.com/Devn913/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0326-power-of-three](https://github.com/Devn913/LeetCode/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/Devn913/LeetCode/tree/master/0342-power-of-four) |
 ## Counting
@@ -256,6 +258,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0143-reorder-list](https://github.com/Devn913/LeetCode/tree/master/0143-reorder-list) |
+| [0234-palindrome-linked-list](https://github.com/Devn913/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0503-next-greater-element-ii](https://github.com/Devn913/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0937-online-stock-span](https://github.com/Devn913/LeetCode/tree/master/0937-online-stock-span) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Devn913/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
@@ -327,6 +330,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0142-linked-list-cycle-ii](https://github.com/Devn913/LeetCode/tree/master/0142-linked-list-cycle-ii) |
 | [0143-reorder-list](https://github.com/Devn913/LeetCode/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/Devn913/LeetCode/tree/master/0206-reverse-linked-list) |
+| [0234-palindrome-linked-list](https://github.com/Devn913/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0725-split-linked-list-in-parts](https://github.com/Devn913/LeetCode/tree/master/0725-split-linked-list-in-parts) |
 | [0838-design-linked-list](https://github.com/Devn913/LeetCode/tree/master/0838-design-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/Devn913/LeetCode/tree/master/0908-middle-of-the-linked-list) |
