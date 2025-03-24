@@ -9,33 +9,53 @@
  * }
  */
 class Solution {
+    public ListNode reverse(ListNode head){
+        ListNode prev = null;
+        ListNode curr = head;
+        ListNode next = head.next;
+        while(next!=null){
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+            next = next.next;
+        }
+        curr.next = prev;
+        return curr;
+    }
     public ListNode reverseBetween(ListNode head, int left, int right) {
-        int i =1;
-        int j =1;
-        if(head == null){
-            return null;
-        }
-        if(head.next == null){
-            return head;
-        }
-        if(left >= right){
-            return head;
-        }
-        reverseBetween(head,left+1,right-1);
-        ListNode curr1 = head;
-        ListNode curr2 = head;
-        while(i<left){
-          curr1 = curr1.next;
-          i++;
-        }
-        while(j<right){
-            curr2 = curr2.next;
-            j++;
-        }
-        int temp = curr1.val;
-        curr1.val = curr2.val;
-        curr2.val = temp;
+        if(head == null || head.next == null) return head;
+        if(left == right) return head;
+        ListNode headPrev = null;
+        ListNode head1 = null;
+        ListNode tail1 = null;
+        ListNode tailNext = null;
+        ListNode temp = head;
+        int index =1;
+        while(temp!=null){
+            if(index+1 == left){
+                headPrev = temp;
 
+            }else if(index == left){
+                head1 = temp;
+            }else if(index == right){
+                tail1 = temp;
+            }else if(index == right+1){
+                tailNext = temp;
+                break;
+            }
+            temp = temp.next;
+            index++;
+        }
+        tail1.next = null;
+        if(headPrev == null){
+            head = reverse(head);
+        }else{
+            headPrev.next = null;
+            headPrev.next = reverse(head1);
+        }
+        head1.next = tailNext;
         return head;
+
+
     }
 }
