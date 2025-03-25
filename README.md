@@ -63,6 +63,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/Devn913/LeetCode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 | [3541-report-spam-message](https://github.com/Devn913/LeetCode/tree/master/3541-report-spam-message) |
 | [3643-zero-array-transformation-ii](https://github.com/Devn913/LeetCode/tree/master/3643-zero-array-transformation-ii) |
+| [3657-check-if-grid-can-be-cut-into-sections](https://github.com/Devn913/LeetCode/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
 ## Binary Search
 |  |
 | ------- |
@@ -170,6 +171,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0268-missing-number](https://github.com/Devn913/LeetCode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/Devn913/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/Devn913/LeetCode/tree/master/0451-sort-characters-by-frequency) |
+| [3657-check-if-grid-can-be-cut-into-sections](https://github.com/Devn913/LeetCode/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
 ## Tree
 |  |
 | ------- |
