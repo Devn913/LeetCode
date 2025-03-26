@@ -16,9 +16,15 @@ class Solution {
         }
         StringBuilder sb = new StringBuilder();
 
-        for(char ch: s){
-            sb.append(ch);
+        // for(char ch: s){
+        //     sb.append(ch);
+        // }
+
+        while(!s.isEmpty()){
+            sb.append(s.pop());
         }
+        sb.reverse();
+        
         while(sb.length()>0 && sb.charAt(0) == '0'){
             sb.deleteCharAt(0);
         }
