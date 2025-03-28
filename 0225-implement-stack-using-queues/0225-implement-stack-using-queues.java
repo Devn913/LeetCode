@@ -1,4 +1,5 @@
 class MyStack {
+
     Queue<Integer> q1;
     Queue<Integer> q2;
 
@@ -6,9 +7,9 @@ class MyStack {
         q1 = new LinkedList<>();
         q2 = new LinkedList<>();
     }
-    
+    // O(n) time
     public void push(int x) {
-        if(q1.isEmpty()) {
+        if(q1.isEmpty()){
             q1.add(x);
         }else{
             q2.add(x);
