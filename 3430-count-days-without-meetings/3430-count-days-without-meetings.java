@@ -11,7 +11,7 @@ class Solution {
             totalMeetings += temp>0 ? temp: 0;
             lastDay = Math.max(meetings[i][1]+1,lastDay);
         }
-        return (int) (days-totalMeetings); 
+        return days-totalMeetings; 
 
 
     }
