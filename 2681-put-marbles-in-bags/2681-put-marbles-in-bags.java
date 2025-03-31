@@ -9,11 +9,7 @@ class Solution {
         long minPairs = 0;
         for(int i = 0;i<k-1;i++){
             minPairs+=pairs.get(i);
-        }
-        int index = 0;
-        while(index<k-1){
-            maxPairs+=pairs.get(pairs.size() - 1 - index);
-            index++;
+            maxPairs+=pairs.get(pairs.size() - 1 - i);
         }
         return maxPairs - minPairs;
     }
