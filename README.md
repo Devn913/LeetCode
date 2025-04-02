@@ -30,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0169-majority-element](https://github.com/Devn913/LeetCode/tree/master/0169-majority-element) |
 | [0200-number-of-islands](https://github.com/Devn913/LeetCode/tree/master/0200-number-of-islands) |
 | [0209-minimum-size-subarray-sum](https://github.com/Devn913/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
+| [0217-contains-duplicate](https://github.com/Devn913/LeetCode/tree/master/0217-contains-duplicate) |
 | [0229-majority-element-ii](https://github.com/Devn913/LeetCode/tree/master/0229-majority-element-ii) |
 | [0239-sliding-window-maximum](https://github.com/Devn913/LeetCode/tree/master/0239-sliding-window-maximum) |
 | [0268-missing-number](https://github.com/Devn913/LeetCode/tree/master/0268-missing-number) |
@@ -112,6 +113,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0160-intersection-of-two-linked-lists](https://github.com/Devn913/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0169-majority-element](https://github.com/Devn913/LeetCode/tree/master/0169-majority-element) |
 | [0187-repeated-dna-sequences](https://github.com/Devn913/LeetCode/tree/master/0187-repeated-dna-sequences) |
+| [0217-contains-duplicate](https://github.com/Devn913/LeetCode/tree/master/0217-contains-duplicate) |
 | [0229-majority-element-ii](https://github.com/Devn913/LeetCode/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/Devn913/LeetCode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/Devn913/LeetCode/tree/master/0347-top-k-frequent-elements) |
@@ -194,6 +196,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0075-sort-colors](https://github.com/Devn913/LeetCode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/Devn913/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0169-majority-element](https://github.com/Devn913/LeetCode/tree/master/0169-majority-element) |
+| [0217-contains-duplicate](https://github.com/Devn913/LeetCode/tree/master/0217-contains-duplicate) |
 | [0229-majority-element-ii](https://github.com/Devn913/LeetCode/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/Devn913/LeetCode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/Devn913/LeetCode/tree/master/0347-top-k-frequent-elements) |
