@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Devn913/LeetCode/tree/master/0001-two-sum) |
+| [0015-3sum](https://github.com/Devn913/LeetCode/tree/master/0015-3sum) |
 | [0033-search-in-rotated-sorted-array](https://github.com/Devn913/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Devn913/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0039-combination-sum](https://github.com/Devn913/LeetCode/tree/master/0039-combination-sum) |
@@ -179,6 +180,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 |  |
 | ------- |
+| [0015-3sum](https://github.com/Devn913/LeetCode/tree/master/0015-3sum) |
 | [0061-rotate-list](https://github.com/Devn913/LeetCode/tree/master/0061-rotate-list) |
 | [0075-sort-colors](https://github.com/Devn913/LeetCode/tree/master/0075-sort-colors) |
 | [0082-remove-duplicates-from-sorted-list-ii](https://github.com/Devn913/LeetCode/tree/master/0082-remove-duplicates-from-sorted-list-ii) |
@@ -200,6 +202,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/Devn913/LeetCode/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/Devn913/LeetCode/tree/master/0049-group-anagrams) |
 | [0075-sort-colors](https://github.com/Devn913/LeetCode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/Devn913/LeetCode/tree/master/0088-merge-sorted-array) |
