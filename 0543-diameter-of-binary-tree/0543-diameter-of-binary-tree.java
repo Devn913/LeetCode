@@ -14,17 +14,29 @@
  * }
  */
 class Solution {
-    private int maxDia = 0;
-    private int height(TreeNode root){
-        if(root == null) return 0;
-        int left = height(root.left);
-        int right = height(root.right);
-        maxDia = Math.max(maxDia,left+right);
-        return Math.max(left,right)+1;
+    class Pair{
+        int height;
+        int dia;
+        Pair(int h, int d){
+            this.height = h;
+            this.dia    = d; 
+        }
+    }
+
+    public Pair helper(TreeNode root){
+        if(root == null) return new Pair(0,0);
+
+        Pair left = helper(root.left);
+        Pair right = helper(root.right);
+
+
+        Pair ans  = new Pair(0,0);
+         
+        ans.dia = Math.max(left.dia,Math.max(right.dia,left.height+right.height+1));
+        ans.height = Math.max(left.height,right.height)+1;
+        return ans;
     }
     public int diameterOfBinaryTree(TreeNode root) {
-        height(root);
-        return maxDia;
-        
+        return helper(root).dia - 1;
     }
 }
