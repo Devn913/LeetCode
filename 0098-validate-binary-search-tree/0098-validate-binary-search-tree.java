@@ -20,9 +20,12 @@ class Solution {
 
         if(root.val>min && root.val<max){
             return helper(root.left,min,root.val) && helper(root.right,root.val,max);
+        }else{
+            return false;
         }
-        return false;
     }
+
+
 
 
     public boolean isValidBST(TreeNode root) {
