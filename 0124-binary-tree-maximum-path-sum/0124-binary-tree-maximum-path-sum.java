@@ -23,6 +23,7 @@ class Solution {
         int right = helper(root.right);
 
         max = Math.max(Math.max(max,left+right+root.val),Math.max(left+root.val,right+root.val));
+        max = Math.max(max,root.val);
         return Math.max(root.val,Math.max(root.val+left,root.val+right));
 
     }
