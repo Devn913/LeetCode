@@ -1,65 +1,75 @@
 class Solution {
     public int romanToInt(String s) {
         int ans = 0;
-        for(int i = 0;i<s.length();i++){
-            char c = s.charAt(i);
+        int index = 0;
+
+        while(index<s.length()){
+            char c = s.charAt(index);
             if(c == 'I'){
-                if(i+1<s.length()){
-                    if(s.charAt(i+1) == 'V'){
+                if(index+1<s.length()){
+                    if(s.charAt(index+1) == 'V'){
                         ans+=4;
-                        i++;
-                    }else if(s.charAt(i+1) == 'X'){
+                        index+=2;
+                    }else if(s.charAt(index+1) == 'X'){
                         ans+=9;
-                        i++;
-                    }else{
-                        ans++;
+                        index+=2;
+                    }else {
+                        ans+=1;
+                        index+=1;
                     }
                 }else{
-                    ans++;
+                    ans+=1;
+                    index+=1;
                 }
-            }else if(c == 'X'){
+            }else if(c== 'V'){
+                ans+=5;
+                index++;
 
-                if(i+1<s.length()){
-                    if(s.charAt(i+1) == 'L'){
+            }else if(c == 'X'){
+                if(index+1<s.length()){
+                    if(s.charAt(index+1) == 'L'){
                         ans+=40;
-                        i++;
-                    }else if(s.charAt(i+1) == 'C'){
+                        index+=2;
+                    }else if(s.charAt(index+1) == 'C'){
                         ans+=90;
-                        i++;
-                    }else{
+                        index+=2;
+                    }else {
                         ans+=10;
+                        index+=1;
                     }
                 }else{
                     ans+=10;
+                    index+=1;
                 }
-                
 
+            }else if(c == 'L'){
+                ans+=50;
+                index++;
+                
             }else if(c == 'C'){
-
-                
-                if(i+1<s.length()){
-                    if(s.charAt(i+1) == 'D'){
+                if(index+1<s.length()){
+                    if(s.charAt(index+1) == 'D'){
                         ans+=400;
-                        i++;
-                    }else if(s.charAt(i+1) == 'M'){
+                        index+=2;
+                    }else if(s.charAt(index+1) == 'M'){
                         ans+=900;
-                        i++;
-                    }else{
+                        index+=2;
+                    }else {
                         ans+=100;
+                        index+=1;
                     }
                 }else{
                     ans+=100;
+                    index+=1;
                 }
 
-            }
-            else if(c == 'V'){
-                ans+=5;
-            }else if(c == 'L'){
-                ans+=50;
-            }else if(c ==  'D'){
+            }else if(c == 'D'){
                 ans+=500;
+                index++;
+
             }else if(c == 'M'){
                 ans+=1000;
+                index++;
             }
         }
         return ans;
