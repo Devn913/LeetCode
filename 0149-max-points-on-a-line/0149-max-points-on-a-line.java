@@ -1,19 +1,23 @@
 class Solution {
+    // [[1,2],[3,2],[2]]]
     public int maxPoints(int[][] points) {
-        int n = points.length;
-        if(n<=2) return n;
-        int max = 2;
-        for(int i = 0;i<n;i++){
-            for(int j = i+1;j<n;j++){
-                int total = 2;
-                for(int k = 0;k<n;k++){
-                    if(k!=i && k!=j){
-                        if((points[j][1] - points[i][1])*(points[k][0] - points[i][0]) == (points[k][1] - points[i][1])*(points[j][0] - points[i][0])) total++;
-                    }
+        int ans = 0;
+        for(int i = 0;i<points.length;i++){
+            HashMap<Double,Integer> map = new HashMap<>();
+            for(int j = 0;j<points.length;j++){
+                if(i==j) continue;
+                double dx = points[j][0] - points[i][0];
+                double dy = points[j][1] - points[i][1];
+                double slope = 0;
+                if(dx == 0){
+                    slope = Integer.MAX_VALUE;
+                }else{
+                    slope =  (dy)/(dx);
                 }
-                max = Math.max(max,total);
+                map.put(slope,map.getOrDefault(slope,0)+1);
+                ans = Math.max(ans,map.get(slope));
             }
         }
-        return max;
+        return ans+1;
     }
 }
