@@ -10,16 +10,14 @@
  */
 class Solution {
     public class Pair implements Comparable<Pair>{
-        int val;
         ListNode head;
 
-        Pair(int val, ListNode head){
-            this.val = val;
+        Pair(ListNode head){
             this.head = head;
         }
         @Override
         public int compareTo(Pair p){
-            return this.val - p.val;
+            return this.head.val - p.head.val;
         }
     }
     public ListNode mergeKLists(ListNode[] lists) {
@@ -28,14 +26,14 @@ class Solution {
 
         for(int i = 0;i<lists.length;i++){
             ListNode head = lists[i];
-            if(head!=null) pq.add(new Pair(head.val,head));
+            if(head!=null) pq.add(new Pair(head));
         }
 
         ListNode head = new ListNode(0);
         ListNode tail = head;
         while(pq.size()!=0){
             ListNode temp = pq.remove().head;
-            if(temp.next!=null) pq.add(new Pair(temp.next.val,temp.next));
+            if(temp.next!=null) pq.add(new Pair(temp.next));
             tail.next = temp;
             tail = tail.next;
         }
