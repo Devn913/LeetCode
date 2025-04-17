@@ -1,19 +1,32 @@
 class Solution {
+    public int helper(int m, int n, int i, int j, int[][] dp){
+        if(i>= m || j>=n) return 0;
+        if(dp[i][j]!=-1) return dp[i][j];
+        if(i ==  m-1 && j == n-1) return 1;
+        dp[i][j] =  helper(m,n,i+1,j,dp) + helper(m,n,i,j+1,dp);
+        return dp[i][j];
+        
+    }
     public int uniquePaths(int m, int n) {
-        if(m==1 && n == 1) return 1;
         int[][] dp = new int[m][n];
-        dp[0][0] = 0;
-        for(int row = 1;row<m;row++){
-            dp[row][0] = 1;
-        }
-        for(int col = 1;col<n;col++){
-            dp[0][col] = 1;
-        }
-        for(int row = 1;row<m;row++){
-            for(int col = 1;col<n;col++){
-                dp[row][col] = dp[row-1][col]+dp[row][col-1];
+        for(int i = 0;i<m;i++){
+            for(int j = 0;j<n;j++){
+                dp[i][j] = -1;
             }
         }
-        return dp[m-1][n-1];
+        return helper(m,n,0,0,dp);
     }
 }
+
+
+// Recursion: TLE
+// class Solution {
+//     public int helper(int m, int n, int i, int j){
+//         if(i ==  m-1 && j == n-1) return 1;
+//         if(i>= m || j>=n) return 0;
+//         return helper(m,n,i+1,j) + helper(m,n,i,j+1);    
+//     }
+//     public int uniquePaths(int m, int n) {
+//         return helper(m,n,0,0);
+//     }
+// }
