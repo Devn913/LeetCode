@@ -33,22 +33,45 @@
 // Method: 3 Dynammic Programming
 // Time Complexity  : O(m*n)
 // Space Complexity : O(m*n) 
-class Solution {
+// class Solution {
+//     public int uniquePaths(int m, int n) {
+//         int[][] dp = new int[m][n];
+//         for(int i = 0;i<n;i++){
+//             dp[m-1][i] = 1;
+//         }
+//         for(int i = 0;i<m;i++){
+//             dp[i][n-1] = 1;
+//         }
+//         for(int i = m-2;i>=0;i--){
+//             for(int j = n-2;j>=0;j--){
+//                 dp[i][j] = dp[i+1][j] + dp[i][j+1];
+//             }
+//         }
+//         return dp[0][0];
+//     }
+// }
+
+
+
+class Solution{
+    public int helper(int currentRow, int currentCol, int m, int n, int[][] memo){
+
+        if(currentRow>=m || currentCol>=n) return 0;
+        if(currentRow == m-1  && currentCol == n-1) return 1;
+        if(memo[currentRow][currentCol] != -1) return memo[currentRow][currentCol];
+
+        int ans = helper(currentRow+1,currentCol,m,n,memo) + helper(currentRow, currentCol+1,m,n,memo);
+        memo[currentRow][currentCol] = ans;
+        return ans;
+        
+    }
     public int uniquePaths(int m, int n) {
-        int[][] dp = new int[m][n];
-        for(int i = 0;i<n;i++){
-            dp[m-1][i] = 1;
-        }
+        int[][] memo = new int[m][n];
         for(int i = 0;i<m;i++){
-            dp[i][n-1] = 1;
-        }
-        for(int i = m-2;i>=0;i--){
-            for(int j = n-2;j>=0;j--){
-                dp[i][j] = dp[i+1][j] + dp[i][j+1];
+            for(int j = 0;j<n;j++){
+                memo[i][j] = -1;
             }
         }
-        return dp[0][0];
+        return helper(0,0,m,n,memo);
     }
 }
-
-
