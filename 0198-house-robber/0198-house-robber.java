@@ -12,9 +12,9 @@
 // }
 
 
-// Method 2: Memoization: Accepted 
-// Time complexity:  O(n)
-// Space Complexity: O(n) + recursion stack memory
+// Method 2         : Memoization: Accepted 
+// Time complexity  : O(n)
+// Space Complexity : O(n) + recursion stack memory
 // class Solution {
 //     public int helper(int[] nums, int[] dp, int currentIndex){
 //         if(currentIndex >= nums.length) return 0;
@@ -32,22 +32,32 @@
 //     }
 // }
 
-
+// Method 2         : Dynammic Programming: Accepted  (Most opmtimized)
+// Time complexity  : O(n)
+// Space complexity : O(n)
 class Solution {
-    public int rob(int[] nums) {
-        if(nums.length  == 1) return nums[0];
-        if(nums.length  == 2) return Math.max(nums[0],nums[1]);
-        int[] dp = new int[nums.length];
-        for(int i =0;i<nums.length;i++){
-            dp[i] = -1;
-        }
-        dp[0] = nums[0];
-        dp[1] = Math.max(dp[0],nums[1]);
 
-        for(int i = 2;i<nums.length;i++){
-            dp[i] = Math.max(dp[i-1],dp[i-2]+nums[i]);
+
+    public int helper(int[] house, int currentHouse,int[] memo){
+        if(currentHouse>=house.length) return 0;
+        if(memo[currentHouse] != -1) return memo[currentHouse];
+
+        int currentHouseLoot = house[currentHouse] + helper(house,currentHouse+2,memo);
+        int notLoot          = helper(house,currentHouse+1,memo);
+
+        memo[currentHouse] = Math.max(currentHouseLoot,notLoot);
+        return memo[currentHouse];
+    }
+
+
+
+    public int rob(int[] nums) {
+        int[] memo = new int[nums.length];
+        for(int i = 0;i<nums.length;i++){
+            memo[i] = -1;
         }
-        return dp[nums.length - 1];
+        return helper(nums,0,memo);
+
     }
 }
 
