@@ -51,11 +51,11 @@
 // Approach 3: DP
 class Solution {
     public boolean canPartition(int[] nums) {
-        long sum = 0;
+        int sum = 0;
         for(int num: nums) sum+=num;
         if(sum % 2 != 0) return false;
         sum = sum/2;
-        boolean[][] dp = new boolean[nums.length+1][(int) sum+1];
+        boolean[][] dp = new boolean[nums.length+1][sum+1];
 
         for(int i = 1;i<=nums.length;i++){
             for(int j = 0;j<=sum;j++){
@@ -70,7 +70,7 @@ class Solution {
                 }
             }
         }
-        return dp[nums.length][(int) sum];
+        return dp[nums.length][sum];
         
     }
 }
