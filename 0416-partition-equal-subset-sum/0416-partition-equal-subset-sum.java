@@ -70,26 +70,22 @@ class Solution {
         for(int num: nums) sum+=num;
         if(sum % 2 != 0) return false;
         sum = sum/2;
-        int[][] dp = new int[nums.length+1][(int) sum+1];
-        // for(int i = 0;i<memo.length;i++){
-        //     for(int j = 0;j<memo[0].length;j++){
-        //         memo[i][j] = -1;
-        //     }
-        // }
+        boolean[][] dp = new boolean[nums.length+1][(int) sum+1];
+
         for(int i = 1;i<=nums.length;i++){
             for(int j = 0;j<=sum;j++){
                 if(i == 1){
-                    if(j == nums[i-1]) dp[i][j] = 1;
-                    else dp[i-1][j] = 0;
+                    if(j == nums[i-1]) dp[i][j] = true;
+                    else dp[i-1][j] = false;
                 }else{
                     dp[i][j] = dp[i-1][j];
-                    if(dp[i][j] == 0 && j-nums[i-1]>0){
+                    if(dp[i][j] == false && j-nums[i-1]>0){
                         dp[i][j] = dp[i-1][j-nums[i-1]];
                     } 
                 }
             }
         }
-        return dp[nums.length][(int) sum] == 1;
+        return dp[nums.length][(int) sum];
         
     }
 }
