@@ -29,23 +29,20 @@
 class Solution {
     public int minFallingPathSum(int[][] matrix) {
         int ans = Integer.MAX_VALUE;
-        for(int i =0;i<matrix.length;i++){
-            ans = Math.min(ans,matrix[0][i]);
-        }
-
         for (int i = 1; i < matrix.length; i++) {
             for(int j = 0;j<matrix.length;j++){
                 if(j == 0){
                     matrix[i][j] = matrix[i][j] + Math.min(matrix[i-1][j],matrix[i-1][j+1]);
-                    ans = matrix[i][j]; 
                 }else if(j == matrix.length -1){
                     matrix[i][j] = matrix[i][j] + Math.min(matrix[i-1][j],matrix[i-1][j-1]);
-                    ans = Math.min(ans,matrix[i][j]);
                 }else{
                     matrix[i][j] = matrix[i][j] + Math.min(matrix[i-1][j],Math.min(matrix[i-1][j-1],matrix[i-1][j+1]));
-                    ans = Math.min(ans,matrix[i][j]);
                 }
             }
+        }
+
+        for(int i = 0;i<matrix.length;i++){
+            ans = Math.min(ans,matrix[matrix.length-1][i]);
         }
         return ans;
 
