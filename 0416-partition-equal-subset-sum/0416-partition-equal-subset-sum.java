@@ -50,21 +50,6 @@
 
 // Approach 3: DP
 class Solution {
-    public boolean findSum(int[] nums, int[][] memo, int size, int sum){
-        if(size<1 || sum<0) return false;
-        if(size == 1){
-            if(sum == nums[size-1]) return true;
-            return false;
-        }
-        if(memo[size][sum] != -1) return (memo[size][sum] == 1);
-        if(findSum(nums,memo,size-1,sum) || findSum(nums,memo,size-1,sum-nums[size-1])){
-            memo[size][sum] = 1;
-        }else{
-            memo[size][sum] = 0;
-        }
-        return memo[size][sum] == 1;
-
-    }
     public boolean canPartition(int[] nums) {
         long sum = 0;
         for(int num: nums) sum+=num;
