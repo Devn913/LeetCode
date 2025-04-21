@@ -47,21 +47,43 @@ class Solution {
 
     // Method 3: DP
 
+    // public int minFallingPathSum(int[][] matrix) {
+    //     int[][] dp = new int[matrix.length+1][matrix.length+1];
+    //     for(int i = matrix.length - 1;i!=-1;i--){
+    //         for(int j = matrix.length - 1;j!=-1;j--){
+    //             if(j == 0){
+    //                 dp[i][j] = matrix[i][j] + Math.min(dp[i+1][j],dp[i+1][j+1]) ;
+    //             }else if(j == matrix.length -1){
+    //                 dp[i][j] = matrix[i][j] + Math.min(dp[i+1][j],dp[i+1][j-1]);
+    //             }
+    //             else dp[i][j] = matrix[i][j] + Math.min(dp[i+1][j],Math.min(dp[i+1][j-1],dp[i+1][j+1]));
+    //         }
+    //     }
+    //     int ans = Integer.MAX_VALUE;
+    //     for(int i = 0;i<matrix.length;i++){
+    //         ans = Math.min(ans,dp[0][i]);
+    //     }
+
+    //     return ans;
+    // }
+
+
+    // No extra memory
     public int minFallingPathSum(int[][] matrix) {
-        int[][] dp = new int[matrix.length+1][matrix.length+1];
-        for(int i = matrix.length - 1;i!=-1;i--){
+        // int[][] dp = new int[matrix.length+1][matrix.length+1];
+        for(int i = matrix.length - 2;i!=-1;i--){
             for(int j = matrix.length - 1;j!=-1;j--){
                 if(j == 0){
-                    dp[i][j] = matrix[i][j] + Math.min(dp[i+1][j],dp[i+1][j+1]) ;
+                    matrix[i][j] = matrix[i][j] + Math.min(matrix[i+1][j],matrix[i+1][j+1]) ;
                 }else if(j == matrix.length -1){
-                    dp[i][j] = matrix[i][j] + Math.min(dp[i+1][j],dp[i+1][j-1]);
+                    matrix[i][j] = matrix[i][j] + Math.min(matrix[i+1][j],matrix[i+1][j-1]);
                 }
-                else dp[i][j] = matrix[i][j] + Math.min(dp[i+1][j],Math.min(dp[i+1][j-1],dp[i+1][j+1]));
+                else matrix[i][j] = matrix[i][j] + Math.min(matrix[i+1][j],Math.min(matrix[i+1][j-1],matrix[i+1][j+1]));
             }
         }
         int ans = Integer.MAX_VALUE;
         for(int i = 0;i<matrix.length;i++){
-            ans = Math.min(ans,dp[0][i]);
+            ans = Math.min(ans,matrix[0][i]);
         }
 
         return ans;
