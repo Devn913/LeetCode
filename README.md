@@ -54,6 +54,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0322-coin-change](https://github.com/Devn913/LeetCode/tree/master/0322-coin-change) |
 | [0347-top-k-frequent-elements](https://github.com/Devn913/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0416-partition-equal-subset-sum](https://github.com/Devn913/LeetCode/tree/master/0416-partition-equal-subset-sum) |
+| [0435-non-overlapping-intervals](https://github.com/Devn913/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0485-max-consecutive-ones](https://github.com/Devn913/LeetCode/tree/master/0485-max-consecutive-ones) |
 | [0503-next-greater-element-ii](https://github.com/Devn913/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Devn913/LeetCode/tree/master/0540-single-element-in-a-sorted-array) |
@@ -201,6 +202,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0337-house-robber-iii](https://github.com/Devn913/LeetCode/tree/master/0337-house-robber-iii) |
 | [0338-counting-bits](https://github.com/Devn913/LeetCode/tree/master/0338-counting-bits) |
 | [0416-partition-equal-subset-sum](https://github.com/Devn913/LeetCode/tree/master/0416-partition-equal-subset-sum) |
+| [0435-non-overlapping-intervals](https://github.com/Devn913/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0516-longest-palindromic-subsequence](https://github.com/Devn913/LeetCode/tree/master/0516-longest-palindromic-subsequence) |
 | [0954-maximum-sum-circular-subarray](https://github.com/Devn913/LeetCode/tree/master/0954-maximum-sum-circular-subarray) |
 | [0967-minimum-falling-path-sum](https://github.com/Devn913/LeetCode/tree/master/0967-minimum-falling-path-sum) |
@@ -262,6 +264,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0229-majority-element-ii](https://github.com/Devn913/LeetCode/tree/master/0229-majority-element-ii) |
 | [0268-missing-number](https://github.com/Devn913/LeetCode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/Devn913/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0435-non-overlapping-intervals](https://github.com/Devn913/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0451-sort-characters-by-frequency](https://github.com/Devn913/LeetCode/tree/master/0451-sort-characters-by-frequency) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/Devn913/LeetCode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/Devn913/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
@@ -659,6 +662,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0011-container-with-most-water](https://github.com/Devn913/LeetCode/tree/master/0011-container-with-most-water) |
 | [0045-jump-game-ii](https://github.com/Devn913/LeetCode/tree/master/0045-jump-game-ii) |
 | [0402-remove-k-digits](https://github.com/Devn913/LeetCode/tree/master/0402-remove-k-digits) |
+| [0435-non-overlapping-intervals](https://github.com/Devn913/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0768-partition-labels](https://github.com/Devn913/LeetCode/tree/master/0768-partition-labels) |
 | [2681-put-marbles-in-bags](https://github.com/Devn913/LeetCode/tree/master/2681-put-marbles-in-bags) |
 | [3001-apply-operations-to-maximize-score](https://github.com/Devn913/LeetCode/tree/master/3001-apply-operations-to-maximize-score) |
