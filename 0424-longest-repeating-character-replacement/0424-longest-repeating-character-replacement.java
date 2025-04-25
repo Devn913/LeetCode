@@ -1,24 +1,23 @@
 class Solution {
-    public boolean isValid(int[] freq, int len, int k){
-        int maxFreq = 0;
-        for(int i = 0;i<freq.length;i++){
-            maxFreq = Math.max(maxFreq,freq[i]);
-        }
-        return len - maxFreq<=k;
+    public boolean isValid(int[] freq, int k, int len){
+        int maxFreq = freq[0];
+        for(int i = 1;i<26;i++) maxFreq = Math.max(maxFreq,freq[i]);
+
+        return  len - maxFreq <= k;
     }
     public int characterReplacement(String s, int k) {
-        int start,end;
         int[] freq = new int[26];
+        int l,r;
         int ans = Integer.MIN_VALUE;
-        for(start=0,end=0;end<s.length();end++){
-            freq[(int) (s.charAt(end) - 'A')]++;
-            while(start<s.length() && !isValid(freq,end-start+1,k)){
-                freq[(int) (s.charAt(start) - 'A')]--;
-                start++;
+        for(l=0,r=0;r<s.length();r++){
+            freq[(int) (s.charAt(r)-'A')]++;
+            
+            while(l<=r && !isValid(freq,k,r-l+1)){
+                freq[(int) (s.charAt(l)-'A')]--;
+                l++;
             }
-            ans = Math.max(ans,end-start+1);
+            ans = Math.max(ans,r-l+1);
         }
         return ans;
-
     }
 }
