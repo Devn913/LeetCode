@@ -18,14 +18,15 @@ class Solution {
         TreeNode temp = root;
         Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
-        boolean level  = false;
+        boolean level = false;
+
         while(!q.isEmpty()){
-            Stack<Integer> temp_s = new Stack<>();
-            Queue<TreeNode> temp_q = new LinkedList<>();
+            Queue<TreeNode> tempQ = new LinkedList<>();
+            Stack<Integer> tempS = new Stack<>();
             for(int i = q.size();i!=0;i--){
                 if(level){
-                    temp_q.add(q.peek());
-                    temp_s.add(q.poll().val);
+                    tempQ.add(q.peek());
+                    tempS.add(q.poll().val);
                 }else{
                     root = q.poll();
                     if(root.left!=null) q.add(root.left);
@@ -34,15 +35,17 @@ class Solution {
             }
 
             if(level){
-                while(!temp_q.isEmpty()){
-                    root = temp_q.poll();
+                while(!tempQ.isEmpty()){
+                    root = tempQ.poll();
                     if(root.left!=null) q.add(root.left);
                     if(root.right!=null) q.add(root.right);
-                    root.val = temp_s.pop();
+
+                    root.val = tempS.pop();
                 }
             }
             level = !level;
         }
         return temp;
+        
     }
 }
