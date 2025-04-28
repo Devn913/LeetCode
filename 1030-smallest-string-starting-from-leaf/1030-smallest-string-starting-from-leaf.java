@@ -15,19 +15,18 @@
  */
 class Solution {
     String ans = "";
-    public void dfs(TreeNode root, String currentString){
+    public void dfs(TreeNode root, String currString){
         if(root == null) return;
 
-        currentString = (char) (root.val+'a') + currentString;
-        if(root.left==null && root.right==null){
-            if(ans.isEmpty() || ans.compareTo(currentString)>0){
-                ans = currentString;
+        currString  = (char) (root.val + 'a') + currString;
+
+        if(root.left==null && root.right == null){
+            if(ans.isEmpty() || currString.compareTo(ans)<0){
+                ans = currString;
             }
         }
-        if(root.left!=null)  dfs(root.left,currentString);
-        if(root.right!=null) dfs(root.right,currentString);
-        
-
+        dfs(root.left,currString);
+        dfs(root.right,currString);
 
     }
     public String smallestFromLeaf(TreeNode root) {
