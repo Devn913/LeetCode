@@ -75,6 +75,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/Devn913/LeetCode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1224-minimum-falling-path-sum-ii](https://github.com/Devn913/LeetCode/tree/master/1224-minimum-falling-path-sum-ii) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/Devn913/LeetCode/tree/master/1335-maximum-candies-allocated-to-k-children) |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/Devn913/LeetCode/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/Devn913/LeetCode/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/Devn913/LeetCode/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [1983-maximum-population-year](https://github.com/Devn913/LeetCode/tree/master/1983-maximum-population-year) |
@@ -421,6 +422,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0326-power-of-three](https://github.com/Devn913/LeetCode/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/Devn913/LeetCode/tree/master/0342-power-of-four) |
 | [1014-k-closest-points-to-origin](https://github.com/Devn913/LeetCode/tree/master/1014-k-closest-points-to-origin) |
+| [1421-find-numbers-with-even-number-of-digits](https://github.com/Devn913/LeetCode/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/Devn913/LeetCode/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/Devn913/LeetCode/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/Devn913/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
