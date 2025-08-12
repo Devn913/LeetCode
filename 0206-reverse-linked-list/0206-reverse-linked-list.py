@@ -10,12 +10,10 @@ class Solution:
         
         newHead = self.reverseList(head.next)
 
-        temp = newHead
 
-        while(temp.next!=None):
-            temp = temp.next
+        tail = head.next
 
-        temp.next = head
-
+        tail.next = head
         head.next = None
+
         return newHead
