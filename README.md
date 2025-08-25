@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0033-search-in-rotated-sorted-array](https://github.com/Devn913/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Devn913/LeetCode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0039-combination-sum](https://github.com/Devn913/LeetCode/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/Devn913/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0045-jump-game-ii](https://github.com/Devn913/LeetCode/tree/master/0045-jump-game-ii) |
 | [0046-permutations](https://github.com/Devn913/LeetCode/tree/master/0046-permutations) |
 | [0048-rotate-image](https://github.com/Devn913/LeetCode/tree/master/0048-rotate-image) |
@@ -632,6 +633,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0039-combination-sum](https://github.com/Devn913/LeetCode/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/Devn913/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/Devn913/LeetCode/tree/master/0046-permutations) |
 | [0078-subsets](https://github.com/Devn913/LeetCode/tree/master/0078-subsets) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/Devn913/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
