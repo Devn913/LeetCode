@@ -8,9 +8,10 @@ class Solution:
                 res.append(curr[:])
                 return
             
+ 
+            dfs(index+1)
             curr.append(nums[index])
             dfs(index+1)
             curr.pop()
-            dfs(index+1)
         dfs(0)
         return res
