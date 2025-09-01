@@ -217,6 +217,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0120-triangle](https://github.com/Devn913/LeetCode/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Devn913/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Devn913/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
+| [0131-palindrome-partitioning](https://github.com/Devn913/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [0152-maximum-product-subarray](https://github.com/Devn913/LeetCode/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/Devn913/LeetCode/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/Devn913/LeetCode/tree/master/0213-house-robber-ii) |
@@ -636,6 +637,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0040-combination-sum-ii](https://github.com/Devn913/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/Devn913/LeetCode/tree/master/0046-permutations) |
 | [0078-subsets](https://github.com/Devn913/LeetCode/tree/master/0078-subsets) |
+| [0131-palindrome-partitioning](https://github.com/Devn913/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [1030-smallest-string-starting-from-leaf](https://github.com/Devn913/LeetCode/tree/master/1030-smallest-string-starting-from-leaf) |
 | [2107-find-unique-binary-string](https://github.com/Devn913/LeetCode/tree/master/2107-find-unique-binary-string) |
 | [2174-next-greater-numerically-balanced-number](https://github.com/Devn913/LeetCode/tree/master/2174-next-greater-numerically-balanced-number) |
@@ -652,6 +654,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0038-count-and-say](https://github.com/Devn913/LeetCode/tree/master/0038-count-and-say) |
 | [0049-group-anagrams](https://github.com/Devn913/LeetCode/tree/master/0049-group-anagrams) |
 | [0076-minimum-window-substring](https://github.com/Devn913/LeetCode/tree/master/0076-minimum-window-substring) |
+| [0131-palindrome-partitioning](https://github.com/Devn913/LeetCode/tree/master/0131-palindrome-partitioning) |
 | [0187-repeated-dna-sequences](https://github.com/Devn913/LeetCode/tree/master/0187-repeated-dna-sequences) |
 | [0402-remove-k-digits](https://github.com/Devn913/LeetCode/tree/master/0402-remove-k-digits) |
 | [0424-longest-repeating-character-replacement](https://github.com/Devn913/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
