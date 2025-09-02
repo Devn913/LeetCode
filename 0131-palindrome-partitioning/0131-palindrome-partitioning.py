@@ -1,17 +1,18 @@
 class Solution:
     def partition(self, s: str) -> List[List[str]]:
+        res = []
+        curr_part = []
 
-        ans = []
-        def helper(s,part):
+        def helper(s):
             if not s:
-                ans.append(part[:])
+                res.append(curr_part[:])
                 return
-            
             for i in range(len(s)):
-                temp = s[:i+1]
+                temp = s[0:i+1]
                 if(temp == temp[::-1]):
-                    part.append(temp)
-                    helper(s[i+1:],part)
-                    part.pop()
-        helper(s,[])
-        return ans
+
+                    curr_part.append(temp)
+                    helper(s[i+1:])
+                    curr_part.pop()
+        helper(s)
+        return res
