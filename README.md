@@ -296,6 +296,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/Devn913/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/Devn913/LeetCode/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2681-put-marbles-in-bags](https://github.com/Devn913/LeetCode/tree/master/2681-put-marbles-in-bags) |
+| [2887-sort-vowels-in-a-string](https://github.com/Devn913/LeetCode/tree/master/2887-sort-vowels-in-a-string) |
 | [2888-minimum-index-of-a-valid-split](https://github.com/Devn913/LeetCode/tree/master/2888-minimum-index-of-a-valid-split) |
 | [3001-apply-operations-to-maximize-score](https://github.com/Devn913/LeetCode/tree/master/3001-apply-operations-to-maximize-score) |
 | [3430-count-days-without-meetings](https://github.com/Devn913/LeetCode/tree/master/3430-count-days-without-meetings) |
@@ -677,6 +678,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2260-divide-a-string-into-groups-of-size-k](https://github.com/Devn913/LeetCode/tree/master/2260-divide-a-string-into-groups-of-size-k) |
 | [2427-first-letter-to-appear-twice](https://github.com/Devn913/LeetCode/tree/master/2427-first-letter-to-appear-twice) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/Devn913/LeetCode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
+| [2887-sort-vowels-in-a-string](https://github.com/Devn913/LeetCode/tree/master/2887-sort-vowels-in-a-string) |
 | [3447-clear-digits](https://github.com/Devn913/LeetCode/tree/master/3447-clear-digits) |
 | [3541-report-spam-message](https://github.com/Devn913/LeetCode/tree/master/3541-report-spam-message) |
 | [3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii](https://github.com/Devn913/LeetCode/tree/master/3569-count-of-substrings-containing-every-vowel-and-k-consonants-ii) |
