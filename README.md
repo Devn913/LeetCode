@@ -91,6 +91,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2307-replace-non-coprime-numbers-in-array](https://github.com/Devn913/LeetCode/tree/master/2307-replace-non-coprime-numbers-in-array) |
 | [2308-divide-array-into-equal-pairs](https://github.com/Devn913/LeetCode/tree/master/2308-divide-array-into-equal-pairs) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/Devn913/LeetCode/tree/master/2394-count-subarrays-with-score-less-than-k) |
+| [2429-design-a-food-rating-system](https://github.com/Devn913/LeetCode/tree/master/2429-design-a-food-rating-system) |
 | [2448-count-number-of-bad-pairs](https://github.com/Devn913/LeetCode/tree/master/2448-count-number-of-bad-pairs) |
 | [2478-longest-nice-subarray](https://github.com/Devn913/LeetCode/tree/master/2478-longest-nice-subarray) |
 | [2551-apply-operations-to-an-array](https://github.com/Devn913/LeetCode/tree/master/2551-apply-operations-to-an-array) |
@@ -181,6 +182,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/Devn913/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2308-divide-array-into-equal-pairs](https://github.com/Devn913/LeetCode/tree/master/2308-divide-array-into-equal-pairs) |
 | [2427-first-letter-to-appear-twice](https://github.com/Devn913/LeetCode/tree/master/2427-first-letter-to-appear-twice) |
+| [2429-design-a-food-rating-system](https://github.com/Devn913/LeetCode/tree/master/2429-design-a-food-rating-system) |
 | [2448-count-number-of-bad-pairs](https://github.com/Devn913/LeetCode/tree/master/2448-count-number-of-bad-pairs) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/Devn913/LeetCode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2707-merge-two-2d-arrays-by-summing-values](https://github.com/Devn913/LeetCode/tree/master/2707-merge-two-2d-arrays-by-summing-values) |
@@ -529,6 +531,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0838-design-linked-list](https://github.com/Devn913/LeetCode/tree/master/0838-design-linked-list) |
 | [0937-online-stock-span](https://github.com/Devn913/LeetCode/tree/master/0937-online-stock-span) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/Devn913/LeetCode/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
+| [2429-design-a-food-rating-system](https://github.com/Devn913/LeetCode/tree/master/2429-design-a-food-rating-system) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -680,6 +683,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/Devn913/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2260-divide-a-string-into-groups-of-size-k](https://github.com/Devn913/LeetCode/tree/master/2260-divide-a-string-into-groups-of-size-k) |
 | [2427-first-letter-to-appear-twice](https://github.com/Devn913/LeetCode/tree/master/2427-first-letter-to-appear-twice) |
+| [2429-design-a-food-rating-system](https://github.com/Devn913/LeetCode/tree/master/2429-design-a-food-rating-system) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/Devn913/LeetCode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2887-sort-vowels-in-a-string](https://github.com/Devn913/LeetCode/tree/master/2887-sort-vowels-in-a-string) |
 | [3447-clear-digits](https://github.com/Devn913/LeetCode/tree/master/3447-clear-digits) |
@@ -706,6 +710,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0451-sort-characters-by-frequency](https://github.com/Devn913/LeetCode/tree/master/0451-sort-characters-by-frequency) |
 | [0480-sliding-window-median](https://github.com/Devn913/LeetCode/tree/master/0480-sliding-window-median) |
 | [1014-k-closest-points-to-origin](https://github.com/Devn913/LeetCode/tree/master/1014-k-closest-points-to-origin) |
+| [2429-design-a-food-rating-system](https://github.com/Devn913/LeetCode/tree/master/2429-design-a-food-rating-system) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/Devn913/LeetCode/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2681-put-marbles-in-bags](https://github.com/Devn913/LeetCode/tree/master/2681-put-marbles-in-bags) |
 | [3332-minimum-operations-to-exceed-threshold-value-ii](https://github.com/Devn913/LeetCode/tree/master/3332-minimum-operations-to-exceed-threshold-value-ii) |
@@ -816,4 +821,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/Devn913/LeetCode/tree/master/0023-merge-k-sorted-lists) |
+## Ordered Set
+|  |
+| ------- |
+| [2429-design-a-food-rating-system](https://github.com/Devn913/LeetCode/tree/master/2429-design-a-food-rating-system) |
 <!---LeetCode Topics End-->
