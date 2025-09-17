@@ -88,6 +88,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/Devn913/LeetCode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2255-minimum-swaps-to-group-all-1s-together-ii](https://github.com/Devn913/LeetCode/tree/master/2255-minimum-swaps-to-group-all-1s-together-ii) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/Devn913/LeetCode/tree/master/2265-partition-array-according-to-given-pivot) |
+| [2307-replace-non-coprime-numbers-in-array](https://github.com/Devn913/LeetCode/tree/master/2307-replace-non-coprime-numbers-in-array) |
 | [2308-divide-array-into-equal-pairs](https://github.com/Devn913/LeetCode/tree/master/2308-divide-array-into-equal-pairs) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/Devn913/LeetCode/tree/master/2394-count-subarrays-with-score-less-than-k) |
 | [2448-count-number-of-bad-pairs](https://github.com/Devn913/LeetCode/tree/master/2448-count-number-of-bad-pairs) |
@@ -439,6 +440,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/Devn913/LeetCode/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/Devn913/LeetCode/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2174-next-greater-numerically-balanced-number](https://github.com/Devn913/LeetCode/tree/master/2174-next-greater-numerically-balanced-number) |
+| [2307-replace-non-coprime-numbers-in-array](https://github.com/Devn913/LeetCode/tree/master/2307-replace-non-coprime-numbers-in-array) |
 | [2448-count-number-of-bad-pairs](https://github.com/Devn913/LeetCode/tree/master/2448-count-number-of-bad-pairs) |
 | [2610-closest-prime-numbers-in-range](https://github.com/Devn913/LeetCode/tree/master/2610-closest-prime-numbers-in-range) |
 | [2649-count-total-number-of-colored-cells](https://github.com/Devn913/LeetCode/tree/master/2649-count-total-number-of-colored-cells) |
@@ -514,6 +516,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0937-online-stock-span](https://github.com/Devn913/LeetCode/tree/master/0937-online-stock-span) |
 | [1050-construct-binary-search-tree-from-preorder-traversal](https://github.com/Devn913/LeetCode/tree/master/1050-construct-binary-search-tree-from-preorder-traversal) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/Devn913/LeetCode/tree/master/2021-remove-all-occurrences-of-a-substring) |
+| [2307-replace-non-coprime-numbers-in-array](https://github.com/Devn913/LeetCode/tree/master/2307-replace-non-coprime-numbers-in-array) |
 | [3001-apply-operations-to-maximize-score](https://github.com/Devn913/LeetCode/tree/master/3001-apply-operations-to-maximize-score) |
 | [3447-clear-digits](https://github.com/Devn913/LeetCode/tree/master/3447-clear-digits) |
 ## Design
@@ -785,6 +788,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Number Theory
 |  |
 | ------- |
+| [2307-replace-non-coprime-numbers-in-array](https://github.com/Devn913/LeetCode/tree/master/2307-replace-non-coprime-numbers-in-array) |
 | [2610-closest-prime-numbers-in-range](https://github.com/Devn913/LeetCode/tree/master/2610-closest-prime-numbers-in-range) |
 | [3001-apply-operations-to-maximize-score](https://github.com/Devn913/LeetCode/tree/master/3001-apply-operations-to-maximize-score) |
 ## Shortest Path
