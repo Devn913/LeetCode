@@ -14,5 +14,9 @@ class Solution:
         for i in range(n):
             if(int(target[i]) != bit):
                 ans+=1
-                bit = (bit +1)%2
+                # bit = (bit +1)%2
+                if(bit == 0):
+                    bit = 1
+                else:
+                    bit = 0
         return ans
