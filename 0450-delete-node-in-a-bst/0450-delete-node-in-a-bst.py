@@ -14,6 +14,12 @@ class Solution:
             while(root.right is not None):
                 root = root.right
             return root
+        
+        def getInorderPrec(root):
+
+            while(root.left is not None):
+                root = root.left
+            return root
 
         if(root is None):
             return None
@@ -28,7 +34,8 @@ class Solution:
             elif(root.right == None):
                 return root.left
             
-            node = getInoderSucc(root.left)
+            # node = getInoderSucc(root.left)
+            node = getInorderPrec(root.right)
             root.val = node.val
-            root.left = self.deleteNode(root.left,node.val)
+            root.right = self.deleteNode(root.right,node.val)
         return root
