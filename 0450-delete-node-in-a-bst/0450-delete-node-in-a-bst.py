@@ -10,6 +10,12 @@ class Solution:
             while(root.left!=None):
                 root = root.left
             return root
+        
+        def getPred(root):
+            while(root.right!=None):
+                root = root.right
+            return root
+
         if(root == None):
             return None
 
@@ -25,11 +31,13 @@ class Solution:
             if(root.right == None):
                 return root.left
             
-            node = getSucc(root.right)
+            # node = getSucc(root.right)
+            node = getPred(root.left)
             root.val = node.val
-            root.right = self.deleteNode(root.right,node.val)
+            root.left = self.deleteNode(root.left,node.val)
+            # root.right = self.deleteNode(root.right,node.val)
         return root
-        
+
             
 
 
